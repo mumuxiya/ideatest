@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
+    <title>{$meta_title}</title>
+    <meta name="keywords" content="{$meta_keywords}" />
+    <meta name="description" content="{$meta_description}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/b9e0cd7d8518f5d2e0c98493e3f238a.jpg" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/youku/css/system.css}" type="text/css" />
+    <script type="text/javascript" th:src="@{/youku/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/default.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/system.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/appdown.js}"></script>
+</head>
+<body >
+<!-- 页头 -->
+<header class="site_head site_head_sticky">
+    <div class="container">
+        <div class="row">
+            <div class="head_inner clearfix">
+                <div class="site_logo"><a href="/" class="link_logo"><img src="{dr_get_file(SITE_LOGO)}" /></a></div>
+                <div class="site_channel hidden-xs">
+                    <li class="channel_title hidden-sm hidden-md"></li>
+                    <li class="channel_area hidden-sm"><a href="/" class="channel_home"><i class="icon_sm icon_home_sm"></i><span class="icon_text">首页</span></a> </li>
+                    <li class="channel_momo">
+                        <a href="javascript:;" class="channel_more"><i class="icon_sm icon_menu_sm"></i><span class="icon_text">频道</span></a>
+                        <div class="nav_more_pop">
+                            <div class="nav_pop_inner">
+                                <i class="triangle_up"><i class="triangle_inner"></i></i>
+                                <ul class="nav_pop_content">
+                                    <a href="/" class="link_nav">首页</a>
+                                    <a href="/index.php?c=vodlist&type=movie" class="link_nav">电影</a>
+                                    <a href="/index.php?c=vodlist&type=tv" class="link_nav">电视剧</a>
+                                    <a href="/index.php?c=vodlist&type=dm" class="link_nav">动漫</a>
+                                    <a href="/index.php?c=vodlist&type=zy" class="link_nav">综艺</a>
+                                    {if SITE_CHANGXIAN==1}<a href="/index.php?c=cx" class="link_nav">尝鲜</a>{/if}
+                                    {list action=category pid=0}
+
+                                    <a href="{$t.url}" class="link_nav">{$t.name}</a>
+                                    </li>
+                                    {/list}
+
+                            </div>
+                        </div>
+                        </ul>
+                    </li>
+                </div>
+                <div class="site_search">
+                    <form class="form-horizontal" id="search" name="search" method="get" action="/index.php" onSubmit="return qrsearch();">
+                        <div class="search_inner">
+                            <div class="search_keywords">
+                                <input type="hidden" name="c" value="search">
+                                <input type="hidden" name="mid" value="vods">
+                                <input type="text" name="keyword" class="search_input mac_wd" placeholder="请输入影片名称"  onclick="chkblk(this)"/></div>
+                            <button class="search_btn mac_search" type="submit" value="搜索影片">
+                                <li class="hidden-xs"><i class="icon icon_search"></i><span class="btn_inner">全网搜</span></li>
+                                <li class="visible-xs"><i class="iconfont icon-search"></i></li></button>
+                            <li class="hidden-xs"><a class="btn_search_hot hidden-xs" href="#" title="热搜榜" target="_blank"><i class="icon_search_hot_sm"></i> <i class="icon_search_hot_animation"></i></a></li>
+                            <li class="visible-xs"><a class="search-close" href="javascript:;">取消</a></li>
+                        </div>
+                    </form>
+                    <div class="mod_smartbox hidden-xs hide">
+                        <div class="sb_history">
+                            <div class="sb_head">
+                                <span class="sb_title">历史记录<a class="sehistoryclean text-muted pull-right" href="">清除记录</a></span>
+                            </div>
+                            <div class="sb_body"></div>
+                        </div>
+                        <div class="sb_hot">
+                            <div class="sb_head">
+                                <span class="sb_title">热门搜索</span>
+                            </div>
+                            <div class="sb_body">
+                                {loop $hot $i $c}
+                                <li class="sb_item sb_item_1"><a href="#"><span class="sb_num">{$i+1}</span><span class="sb_name">{$c.title}</span></a></li>
+                                {/loop}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site_quick hidden-xs">
+                    <li class="quick_item quick_history">
+                        <a class="quick_link" href="javascript:void(0);"><i class="icon icon_time"></i><span class="quick_text">看过</span><i class="triangle_up"><i class="triangle_inner"></i></i></a>
+                        <div class="site_quick_pop mod_pop_history">
+                            <div class="quick_pop_inner">
+                                <div class="pop_info_content" id="modHistoryContent">
+                                    <div class="pop_timeline_wrap">
+                                        <div class="timeline_video_wrap">
+                                            <dl class="timeline_video_list history_earlier"></dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <!-- 	  <li class="quick_item quick_collect hidden-sm"><a href="javascript:;" class="quick_link"><i class="icon icon_collect"></i><span class="quick_text">看单</span></a></li>  -->
+                    <li class="quick_item quick_client hidden-sm"><a href="javascript:;" class="quick_link"><i class="icon icon_client"></i> <span class="quick_text">客户端</span></a></li>
+                    <li class="quick_item quick_user mac_user"><a href="/index.php?s=member" class="quick_link" title="未登录"><img src="/statics/youku/img/avatar.jpg" /></a></li>
+                </div>
+                <div class="macplus-header__user">
+                    <li class="macplus-lishi"><a href="javascript:;"><i class="icon iconfont icon-clock"></i></a></li>
+                    <li class="visible-xs"><a class="open-search" href="javascript:;"><i class="icon iconfont icon-search"></i></a></li>
+                    <li class="visible-xs"><a class="open-navuser" href="/index.php?s=member"><i class="icon iconfont icon-account"></i></a></li>
+                </div>
+            </div>
+            <div class="header-nav visible-xs">
+                <div class="nav-wrap">
+                    <div class="warp headerTopNav">
+                        <ul class="swiper-wrapper clearfix" >
+                            <li class="swiper-slide"><a href="/">首页</a></li>
+                            <li class="swiper-slide"><a href="/index.php?c=vodlist&type=movie" >电影</a></li>
+                            <li class="swiper-slide"><a href="/index.php?c=vodlist&type=tv" >电视剧</a></li>
+                            <li class="swiper-slide"><a href="/index.php?c=vodlist&type=dm">动漫</a></li>
+                            <li class="swiper-slide"><a href="/index.php?c=vodlist&type=zy" >综艺</a></li>
+                            {if SITE_CHANGXIAN==1}<li class="swiper-slide"><a href="/index.php?c=cx">尝鲜</a></li>{/if}
+                            {list action=category pid=0}
+
+                            <li class="swiper-slide"><a href="{$t.url}" class="link_nav">{$t.name}</a></li>
+                            </li>
+                            {/list}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="head_search visible-xs">
+                <div class="search-vod clearfix hide">
+                    <div class="search-bd visible-xs"><span class="text-sed">观看记录</span><a class="historyclean pull-right" href="">清空</a></div>
+                    <ul class="search-vod-list"></ul>
+                </div>
+                <div class="search-top clearfix hide">
+                    <div class="search-bd visible-xs"><span class="text-sed">搜索记录</span><a class="sehistoryclean pull-right" href="">清空</a></div>
+                    <ul class="search-top-list"></ul>
+                </div>
+                <div class="search-hei hide"></div>
+                <div class="search-nav clearfix hide">
+                    <div class="search-bd visible-xs"><span class="text-sed">热门搜索</span></div>
+                    <ul class="search-nav-list">
+                        {loop $hot $i $c}
+                        <li class="search-hd col-xs-2 text-overflow visible-xs"><a href="#"><span class="badge badge-first">{$i+1}</span>{$c.title}</a></li>
+                        {/loop}
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+</header>
+
+
+
+
+<!--<script type="text/javascript" th:src="@{/youku/js/history.js}"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var vod_name='{$title} ',vod_url=window.location.href,vod_part='第{$xl+1}集';-->
+<!--</script>-->
+<style type="text/css">
+  #timer{background: rgba(0, 0, 0, 0.59);padding: 5px;text-align: center;width: 30px;position: absolute;top: 5%;right: 2%;color: #fff;font-size: 16px;border-radius: 50%;height: 30px;line-height: 20px}
+  #xiang{background: rgba(177, 13, 13, 0.87);padding: 5px;text-align: center;width: auto;position: absolute;bottom: 2%;right: 1%;color: #fff;font-size: 16px;border-radius: 10px;height: 20px;line-height: 9px}
+
+        .jkbtn{
+            background: deepskyblue;
+            color: black;
+        }
+    </style>
+<div class="playWarp">
+  <div class="container">
+     <div class="row">
+    <div class="col-lg-1 col-xs-1 macplus-top-0">
+     <div class="macplus-player__item clearfix">
+	 	<div class="col-lg-wide-75 col-xs-1 macplus-top-1 padding-0">
+	     <div class="macplus-player__switch"><span class="btn_switch_bg"></span><i class="icon_sm icon_left_sm"></i><i class="icon_sm icon_right_sm"></i></div>
+      <div class="macplus-player__video embed-responsive embed-responsive-16by9">
+       <div id="shiping_box">
+           <iframe id="video" src=""  allowfullscreen="true" allowtransparency="true" style="width:100%;border:none"></iframe>
+       </div>
+<!--	   <script type="text/javascript"> -->
+
+<!--          function run(){-->
+<!--              console.log("run")-->
+<!--                var s = document.getElementById("timer");-->
+<!--                if(!s){-->
+<!--                    return false;-->
+<!--                }else{-->
+<!--                  s.innerHTML = s.innerHTML * 1 - 1;-->
+<!--                }-->
+<!--        -->
+<!--          }-->
+<!--          var line = ["/api/ckplayer/m3u8.php?url="];-->
+
+<!--        playerSwitch = function(lineIndex)-->
+<!--        {-->
+
+<!--            console.log("playerSwitch")-->
+<!--            var autourl = $('.lipbtn a:eq(0)').attr('data-href');-->
+<!--            $("#video").attr("src",line[lineIndex] + autourl);-->
+<!--            $(".player_switch #" + lineIndex + "" ).attr("onclick","");-->
+<!--            $(".player_switch #" + lineIndex + "" ).siblings().attr("onclick","playerSwitch(this.id)");-->
+<!--        }-->
+
+<!--        window.setInterval("run();", 1000);-->
+<!--	$('#shiping_box').html('<div style="text-align:center;width:100%;"></div><div id="timer">1</div>');-->
+<!--    //设置延时函数-->
+<!--    function adsUp(){-->
+
+<!--        console.log("adsUp")-->
+<!--                    var biaoti = $('#xuji').text();-->
+<!--	                var autourl = $('.lipbtn a:eq(0)').attr('data-href');-->
+<!--					-->
+<!--                    var text = $('.lipbtn:eq(0)').text();-->
+<!--                    $('.js').text('-'+text+'');-->
+<!--                    var jiekou = $('#xlus').children('.list').children('a:eq(0)').attr('data-jk');-->
+<!--					{if $sfzl=='2'}-->
+<!--				    var src=line[0]+autourl; -->
+<!--					{else}-->
+<!--					var src=autourl;-->
+<!--					{/if}-->
+<!--				       -->
+<!--        $("#shiping_box").html('<iframe id="video" src="'+src+'"  allowfullscreen="true" allowtransparency="true" style="width:100%;border:none"></iframe>');  -->
+<!--    }-->
+<!--    //五秒钟后自动收起-->
+<!--    var t = setTimeout(adsUp,1000); -->
+<!--    -->
+<!--</script>	-->
+          <div class="macplus-player__jiexi hide">
+		<h3 class="text-center">无法播放，切换如下解析试试</h3>	
+			<div class="player_switch clearfix" id="xlus">
+                <li class="list " th:each="d,var:${urls}" ><a onclick="playerSwitch(this.id)" id="0"  class="btns-info jxurl" th:data-href="${d.url}" th:text="${d.name}">默认解析</a></li>
+		   </div>
+		</div>
+<!--		<script>-->
+
+<!--                function xldata(obj) {-->
+<!--                    var url = $(obj).attr('data-jk');-->
+<!--                    $.each($('.active'), function () {-->
+<!--                        $(this).removeClass('active');-->
+<!--                    });-->
+<!--                    $(obj).addClass('active');-->
+<!--                    var src = $('.lipbtn:eq(0)').attr('data-href');-->
+<!--                    $('#video').attr('src', url + src);-->
+<!--                }-->
+<!--	-->
+<!--			-->
+<!--            </script>-->
+	  </div>
+	  </div>
+	  <div class="col-lg-wide-25 visible-lg hide">
+	  <div class="player_side_hd"><div class="player_helper"><span class="helper_btn"><i class="icon iconfont icon-lights"></i></span></div></div>
+	<div class="mod_player_side">
+
+      <div class="scroll_top">
+    <h2 class="player_title text-overflow"><a href="#" target="_blank" th:title="${dy.name}" th:text="${dy.name}">{$title}</a></h2>
+
+	</div>
+    <div class="scroll_wrap">
+		 <div class="player_playlist macplus-pannel_hd clearfix">
+		 	<ul class="macplus-content__playlist column3 fade in active" id="con_dplaylist_1">
+                <li th:each="d,var:${dy.hrefs}" class="lipbtn" th:data-href="${d.url}">
+                    <a  data-num='{$name}'   th:text="${d.name}">{$name}</a>
+                </li>
+            </ul>
+         </div>
+  </div>
+
+        <script>
+            var _jxurl = "http://jx.ph63.com/?url=";
+            var _playurl = "";
+
+            window.onload = function(){
+                $(".lipbtn:first").addClass("active");//添加样式
+                $(".jxurl:first").addClass("active");//添加样式
+
+                _playurl = $(".lipbtn").eq(0).attr("data-href");
+                _jxurl = $(".jxurl").eq(0).attr("data-href");
+
+                $(".lipbtn").click(function(e) {
+                    _playurl = e.currentTarget.dataset.href;
+                    $(".lipbtn").removeClass("active");
+                    $(this).addClass("active");
+                    $("#video").attr("src",_jxurl+_playurl);
+                });
+                $(".jxurl").click(function(e) {
+                    _jxurl = e.currentTarget.dataset.href
+                    $(".jxurl").removeClass("active");
+                    $(this).addClass("active");
+                    $("#video").attr("src",_jxurl+_playurl);
+                });
+                alert(_jxurl+_playurl)
+                $("#video").attr("src",_jxurl+_playurl);
+            }
+        </script>
+
+
+</div>
+
+	  </div>
+      <div class="macplus-player__detail detail  clearfix">
+       <ul class="more-btn">
+		<li><a class="btns-info detailjiexi" href="javascript:;">切换解析</a></li>
+	   	<li><a class="btns-info" href="javascript:;" onclick="window.location.reload()">刷新</a></li>
+		<!-- <li><a class="btns-info detailreport" href="javascript:;" onclick="MAC.Gbook.Report('【ID:997-名称:坂道上的家/育儿危机-第01集-kkm3u8】无法观看请检查修复。页面地址：' + location.href,'997')">报错</a></li> -->
+        <li><a class="btns-info" href="{dr_url('show/play')}&id={$id}&xl={$i-1}">上一集</a></li>
+        <li><a class="btns-info" href="{dr_url('show/play')}&id={$id}&xl={$i+1}">下一集</a></li>
+       </ul>
+       <h1 class="title"><a href="#" th:title="${dy.name}" th:text="${dy.name}">{$title}<span class="js"></span></a></h1>
+       <p class="data margin-0"><span class="text-muted">类型：</span>{$type}<span class="split-line"></span><span class="text-muted">地区：</span>{$area}<span class="split-line"></span><span class="text-muted">年份：</span>{$year}	<span class="split-line"></span><a class="detail-mori" href="javascript:;">详情 <i class="icon iconfont icon-moreunfold"></i></a></p>
+	<div class="detail-content" style="display: none;">
+		<p class="data"><span class="text-muted">导演：</span>{$director}</p>
+		<p class="data"><span class="text-muted">主演：</span>{$zhuyan}</p>
+		<p class="data margin-0"><span class="text-muted">简介：</span>{$content}</p>
+		</div>
+	   </div>
+     </div>
+</div>
+</div>
+</div>
+</div>
+<div class="player-mask"></div>
+  <div class="container">
+   <div class="row">
+	 <div class="col-lg-wide-75 col-xs-1 macplus-top-1 macplus-lefter">
+<div class="macplus-play-list hidden-lg block">
+{if $leixing == 'm'}
+      <div class="details-play-title clearfix">
+      <ul class="nav nav-tabs hidden-xs" id="playTab">
+		<li class="hidden-xs active"><a class="gico kkm3u8" href="#con_playlist_1" data-toggle="tab">播放列表</a></li>
+	     </ul>
+<ul class="nav nav-tabs hidden-sm hidden-md hidden-lg">
+         <li class="dropdown mplayer active">
+		 		 <a href="#" id="myTabDrop2" class="gico kkm3u8" data-toggle="dropdown"><span class="name">播放列表</span><b class="caret"></b></a>
+
+				</li>   
+  		<li class="pull-right">无法播放切换<span class="text-green">解析</span>或<span class="text-green">播放源</span>。</li>
+			   </ul>
+			   </ul>
+			</div>
+	<div class="macplus-pannel macplus-pannel-box macplus-pannel-bg">
+		 <div class="player_playlist macplus-pannel_hd">
+		 
+		 <ul class="macplus-content__playlist column8 clearfix fade in active" id="con_playlist_1">
+		  		 {loop $playlist $i $c}
+{if $c['link'] != 'javascript:;'}
+<li {if $i==$id}id="ys" class="active lipbtn"{/if}><a data-num='{$c.title}' data-href="{$c.link}" href="{dr_url('vodshow/play')}&play={$play}&id={$i}" >{$c.title}</a></li>
+{/if}
+{/loop}
+		  		  </ul>
+       	      </div>
+  </div>
+ {/if}
+</div>
+
+	      <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+         <h3 class="title">猜你喜欢</h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+        <ul class="macplus-vodlist__bd clearfix">
+{list action=module module=vods order=rand num=16}
+		 
+		 <li class="col-md-5 col-sm-4 col-xs-3">
+		            <div class="macplus-vodlist__bag">
+           <a class="macplus-vodlist__thumb lazyload" href="{$t.url}" title="{$t.title}" data-original="{if $t.caijipic}{$t.caijipic}{else}{dr_thumb($t.thumb)}{/if}">
+		   <span class="pic-text text-right"></span></a>
+           <div class="macplus-vodlist__detail active">
+            <h4 class="title text-overflow"><a href="{$t.url}" title="{$t.title}">{$t.title}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs"></p>
+           </div>
+          </div>
+		  </li>
+{/list}
+
+		        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+         <h3 class="title">精彩评论</h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+            <div class="mac_comment" data-id="997" data-mid="1" ></div>
+       </div>
+      </div>
+    <script>
+        $(function(){
+            MAC.Comment.Login = 0;
+            MAC.Comment.Verify = 1;
+            MAC.Comment.Init();
+            MAC.Comment.Show(1);
+        });
+    </script>
+     </div>
+    </div>
+    <div class="col-lg-wide-25 col-xs-1 visible-lg hide macplus-righter">
+     <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+		 <h3 class="title"><a href="" target="_blank">热播榜</a></h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+		        <ul class="macplus-vodlist__media active col-pd clearfix">
+					<li class="padding-0">
+				<a class="macplus-vodlist__thumb active lazyload img-shadow" href="#" title="极品老妈第六季" data-original="http://img.kuyun88.com/pic/uploadimg/2018-9/20189291217452437.jpg">						
+				<span class="play-mask hidden-xs"><em class="play-icon-s"></em></span>
+				<span class="pic-text text-center">广告</span>
+				<span class="pic-tag pic-tag-h">Top1</span>						
+				</a>
+			</li>
+		          </ul>
+        <ul class="macplus-vodlist__rank col-pd clearfix">
+		{list action=module module=vods order=hits num=16}
+		         <li class="text-overflow"><a href="{$t.url}" title="{$c.title}"><span class="badge badge-first">{$key+1}</span>{dr_strcut($t.title, 35)}<span class="pull-right text-green">{$t.hits}</span></a></li>
+{/list}	
+		        
+		        </ul>
+		       </div>
+      </div>
+
+     </div>
+    </div>
+	  <div class="mac_hits hits hide" data-mid="1" data-id="997" data-type="hits"></div>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+<!-- 页脚 -->
+<div class="macplus-foot top-line">
+    <div class="container">
+        <div class="row">
+            <div class="footer-center">
+                <p class="text-muted hidden-sm hidden-xs">
+                    <a target="_blank" href="/index.php?c=form&mid=liuyan" class="text-red">求片留言中心</a><span class="split-line"></span>
+                    <a target="_blank" href="#">今日更新</a><span class="split-line"></span>
+                    <a target="_blank" href="#">网站地图</a><span class="split-line"></span>
+                    <a target="_blank" href="#">RSS订阅</a><span class="split-line"></span>
+                    <a target="_blank" href="#">影视榜单</a></p>
+                <p class="visible-xs visible-sm text-muted">视频总量：999 今日更新：0</p>
+                <p class="hidden-sm hidden-xs text-muted">本站不提供任何视听上传储存服务，所有内容均来至网络自动采集，且已注明相关资源来源</p>
+                <p class="text-muted"><span class="hidden-sm hidden-xs text-muted">若本站收录的节目无意侵犯了贵司权利，请来信告知123456@maccms.com，我们会及时处理和删除，谢谢！</span></p>
+                <p class="text-muted">Copyright &copy; 2008-2019 免费电影 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="macplus-extra clearfix">
+            <li><a class="backtop" href="javascript:scroll(0,0)" style="display: none;"><i class="icon iconfont icon-less"></i></a></li>
+            <li><a class="copylink" href="javascript:;"><i class="icon iconfont icon-share"></i></a></li>
+            <li><a href="/index.php?c=form&mid=liuyan"><i class="icon iconfont icon-comments"></i></a></li>
+        </div>
+        <div class="hide">统计代码</div>
+    </div>
+</div>
+</body>
+</html>

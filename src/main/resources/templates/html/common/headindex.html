@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; Charset=utf-8">
+    <title>{$meta_title}</title>
+    <meta name="keywords" content="{$meta_keywords}" />
+    <meta name="description" content="{$meta_description}" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" th:href="@{/youku/css/system.css}" type="text/css" />
+    <script type="text/javascript" th:src="@{/youku/js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/default.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/system.js}"></script>
+    <script type="text/javascript" th:src="@{/youku/js/appdown.js}"></script>
+
+
+</head>
+ <body class="macplus-index">
+<!-- 页头 -->
+<header class="site_head" id="header-top">
+
+ <div class="container"> 
+   <div class="row"> 
+    <div class="head_inner clearfix"> 
+     <div class="site_logo"><a href="/" class="link_logo"><img src="{dr_get_file(SITE_LOGO)}" /></a></div> 
+     <div class="site_channel hidden-xs"> 
+      <li class="channel_title hidden-sm hidden-md"></li>  
+      <li class="channel_area hidden-sm"><a href="/" class="channel_home"><i class="icon_sm icon_home_sm"></i><span class="icon_text">首页</span></a> </li> 
+      <li class="channel_momo"> 
+        <a href="javascript:;" class="channel_more"><i class="icon_sm icon_menu_sm"></i><span class="icon_text">频道</span></a> 
+        <div class="nav_more_pop"> 
+         <div class="nav_pop_inner"> 
+          <i class="triangle_up"><i class="triangle_inner"></i></i> 
+          <ul class="nav_pop_content"> 
+			<a href="/" class="link_nav">首页</a>
+			<a href="/index.php?c=vodlist&type=movie" class="link_nav">电影</a>
+					<a href="/index.php?c=vodlist&type=tv" class="link_nav">电视剧</a>
+					<a href="/index.php?c=vodlist&type=dm" class="link_nav">动漫</a>
+					<a href="/index.php?c=vodlist&type=zy" class="link_nav">综艺</a>
+					{if SITE_CHANGXIAN==1}<a href="/index.php?c=cx" class="link_nav">尝鲜</a>{/if}
+					{list action=category pid=0}
+            
+                <a href="{$t.url}" class="link_nav">{$t.name}</a>
+            </li>
+            {/list}
+			
+	   </div>
+	 </div>
+      </ul>
+      </li> 
+     </div> 
+     <div class="site_search"> 
+	   <form class="form-horizontal" id="search" name="search" method="get" action="/index.php" onSubmit="return qrsearch();">
+       <div class="search_inner"> 
+        <div class="search_keywords">
+		<input type="hidden" name="c" value="search">
+					<input type="hidden" name="mid" value="vods">
+		<input type="text" name="keyword" class="search_input mac_wd" placeholder="请输入影片名称"  onclick="chkblk(this)"/></div> 
+        <button class="search_btn mac_search" type="submit" value="搜索影片">
+		<li class="hidden-xs"><i class="icon icon_search"></i><span class="btn_inner">全网搜</span></li> 
+		<li class="visible-xs"><i class="iconfont icon-search"></i></li></button> 
+        <li class="hidden-xs"><a class="btn_search_hot hidden-xs" href="#" title="热搜榜" target="_blank"><i class="icon_search_hot_sm"></i> <i class="icon_search_hot_animation"></i></a></li>
+		<li class="visible-xs"><a class="search-close" href="javascript:;">取消</a></li>
+       </div> 
+      </form> 
+      <div class="mod_smartbox hidden-xs hide"> 
+       <div class="sb_history"> 
+        <div class="sb_head"> 
+         <span class="sb_title">历史记录<a class="sehistoryclean text-muted pull-right" href="">清除记录</a></span> 
+        </div> 
+        <div class="sb_body"></div> 
+       </div> 
+       <div class="sb_hot"> 
+        <div class="sb_head"> 
+         <span class="sb_title">热门搜索</span> 
+        </div> 
+        <div class="sb_body"> 
+		{loop $hot $i $c}
+		<li class="sb_item sb_item_1"><a href="#"><span class="sb_num">{$i+1}</span><span class="sb_name">{$c.title}</span></a></li> 
+ {/loop}
+ 
+		</div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="site_quick hidden-xs"> 
+      <li class="quick_item quick_history"> 
+       <a class="quick_link" href="javascript:void(0);"><i class="icon icon_time"></i><span class="quick_text">看过</span><i class="triangle_up"><i class="triangle_inner"></i></i></a> 
+       <div class="site_quick_pop mod_pop_history"> 
+		  <div class="quick_pop_inner"> 
+		   <div class="pop_info_content" id="modHistoryContent"> 
+			 <div class="pop_timeline_wrap">
+				<div class="timeline_video_wrap">
+			<dl class="timeline_video_list history_earlier"></dl> 
+			</div> 
+		   </div> 
+		  </div>
+       </div> 
+      </li> 
+
+<!-- 	  <li class="quick_item quick_collect hidden-sm"><a href="javascript:;" class="quick_link"><i class="icon icon_collect"></i><span class="quick_text">看单</span></a></li>  -->
+      <li class="quick_item quick_client hidden-sm"><a href="javascript:;" class="quick_link"><i class="icon icon_client"></i> <span class="quick_text">客户端</span></a></li> 
+    	 <li class="quick_item quick_user mac_user"><a href="/index.php?s=member" class="quick_link" title="未登录"><img src="/statics/youku/img/avatar.jpg" /></a></li>
+	      </div> 
+      <div class="macplus-header__user">
+       <li class="macplus-lishi"><a href="javascript:;"><i class="icon iconfont icon-clock"></i></a></li>
+       <li class="visible-xs"><a class="open-search" href="javascript:;"><i class="icon iconfont icon-search"></i></a></li>
+	   <li class="visible-xs"><a class="open-navuser" href="/index.php?s=member"><i class="icon iconfont icon-account"></i></a></li>
+      </div>
+    </div>
+	<div class="header-nav visible-xs">
+	  <div class="nav-wrap">
+	    <div class="warp headerTopNav">		
+			<ul class="swiper-wrapper clearfix" >
+			<li class="swiper-slide"><a href="/">首页</a></li>
+			<li class="swiper-slide"><a href="/index.php?c=vodlist&type=movie" >电影</a></li>
+					<li class="swiper-slide"><a href="/index.php?c=vodlist&type=tv" >电视剧</a></li>
+					<li class="swiper-slide"><a href="/index.php?c=vodlist&type=dm">动漫</a></li>
+					<li class="swiper-slide"><a href="/index.php?c=vodlist&type=zy" >综艺</a></li>
+					{if SITE_CHANGXIAN==1}<li class="swiper-slide"><a href="/index.php?c=cx">尝鲜</a></li>{/if}
+					{list action=category pid=0}
+            
+                <li class="swiper-slide"><a href="{$t.url}" class="link_nav">{$t.name}</a></li>
+            </li>
+            {/list}
+            
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="head_search visible-xs">
+  <div class="search-vod clearfix hide">
+   <div class="search-bd visible-xs"><span class="text-sed">观看记录</span><a class="historyclean pull-right" href="">清空</a></div>
+   <ul class="search-vod-list"></ul>
+  </div>
+  <div class="search-top clearfix hide">
+   <div class="search-bd visible-xs"><span class="text-sed">搜索记录</span><a class="sehistoryclean pull-right" href="">清空</a></div>
+   <ul class="search-top-list"></ul>
+  </div>
+    <div class="search-hei hide"></div>
+  <div class="search-nav clearfix hide">
+   <div class="search-bd visible-xs"><span class="text-sed">热门搜索</span></div>
+   <ul class="search-nav-list">
+   {loop $hot $i $c}
+		<li class="search-hd col-xs-2 text-overflow visible-xs"><a href="#"><span class="badge badge-first">{$i+1}</span>{$c.title}</a></li> 
+ {/loop}
+
+      </ul>
+   </div>
+  </div>
+ </div>
+</header>
+

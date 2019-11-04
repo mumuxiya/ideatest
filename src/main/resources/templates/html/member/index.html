@@ -1,0 +1,84 @@
+{template "mheader.html"}
+<script type="text/javascript">
+    $(function(){
+        {if $result_error}
+        dr_tips('{$result_error.msg}', 3);
+        {/if}
+    });
+</script>
+ <div class="userWarp">
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel-bg"> 
+     <div class="macplus-user-pics"> 
+      <div class="macplus-user-core text-center"> 
+       <div class="macplus-user-image" data-role=""> 
+        <img class="face macplus-user-radius" src="/statics/youku/img/avatar.jpg?v=1564816680" /> 
+       </div> 
+       <span class="text-white macplus-user-padding font-16">{$member.username}</span> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="macplus-user-rows macplus-user-diss"> 
+{template "left.html"}
+     <div class="col-lg-wide-75 col-xs-1 macplus-user-t2 visible-lg"> 
+      <div class="macplus-user-layout macplus-pannel-bg"> 
+       <div class="macplus-user-rows padding-x line-bottom"><h2>我的主页</h2></div> 
+       <ul class="macplus-user-rows macplus-pannel-bg"> 
+        <li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">用户名</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">{$member.username}</span> 
+         </div> </li> 
+        <li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">所属会员组</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">{if $member.groupid==0}普通会员{else}VIP会员{/if}</span> 
+         </div> </li> 
+		 {if $member.groupid==1}
+        <li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">到期时间</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">{dr_date($member.endtime)}</span> 
+         </div> </li> {/if}
+        <li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">账户积分</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">{$member.money}</span> 
+         </div> </li> 
+
+        <li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">邮件地址</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">{$member.email}</span> 
+         </div> </li> 
+<form action="{dr_member_url('upgrade')}" method="post">
+								<input type="hidden" name="uid" value="{$member.uid}">
+			<li class="padding-x macplus-user-rows line-bottom"> 
+         <div class="block font-16 macplus-user-rows"> 
+          <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">充值卡密</span> 
+          <span class="col-xs-wide-7 col-sm-wide-8 text-overflow"><input type=text name="key" class="font-16" id=cckkey placeholder="输入卡密升级VIP" required="required" ></span> 
+         </div> </li> 
+<li class="padding-x macplus-user-rows top-line"> 
+         <div class="block font-16 macplus-user-rows"> 
+		  <span class="col-sm-5 hidden-xs">&nbsp;</span>
+		  <input type=submit name=cckb id=cckb value='提交' class="col-xs-1 col-sm-3 btn btn-primary">
+		  </div> </li> </form>
+        <!-- <li class="padding-x macplus-user-rows line-bottom">  -->
+         <!-- <div class="block font-16 macplus-user-rows">  -->
+          <!-- <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">推广次数</span>  -->
+          <!-- <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">0</span>  -->
+         <!-- </div> </li>  -->
+        <!-- <li class="padding-x macplus-user-rows">  -->
+         <!-- <div class="block font-16 macplus-user-rows">  -->
+          <!-- <span class="col-xs-wide-3 col-sm-wide-2 text-overflow">推广链接</span>  -->
+          <!-- <span class="col-xs-wide-7 col-sm-wide-8 text-overflow">http://mac.qljm.xyz/index.php/user/reg.html?uid=10</span>  -->
+         <!-- </div> </li>  -->
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+</div> 
+{template "mfooter.html"}

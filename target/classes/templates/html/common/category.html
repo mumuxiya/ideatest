@@ -1,0 +1,53 @@
+{template "header.html"}
+<div class="container">
+<div class="row"  style="margin-top:10px"></div>
+	<div class="row">
+	<div class="hy-layout clearfix">
+  <div class="hy-min-screen clearfix">
+    <div class="item clearfix">
+      <dl class="clearfix">
+        <dt class="text-muted">按剧情</dt>
+        <dd class="clearfix">
+
+ {loop $related $c}
+                    <a href="{$c.url}" class="acat" style="white-space: pre-wrap;">{$c.name}</a>
+                    {/loop}
+				</dd>
+      </dl>
+
+    </div>
+  </div>
+</div>
+
+
+		<div class="hy-layout clearfix" style="margin-top: 0;">
+			<div class="hy-switch-tabs active clearfix">
+				<span class="text-muted pull-right hidden-xs">如果您喜欢本站请动动小手分享给您的朋友！</span>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#">抢先看资源</a></li>
+				</ul>
+			</div>
+			<div class="hy-video-list">
+				<div class="item">
+					<ul class="clearfix">
+ {list action=module catid=$catid order=displayorder,updatetime page=1}
+ <div class="col-md-2 col-sm-3 col-xs-4">
+							<a class="videopic lazy" href="{$t.url}" title="{$t.title}" data-original="{dr_thumb($t.thumb)}" style="background: url(./style/load.gif) no-repeat; background-position:50% 50%; background-size: cover;"><span class="play hidden-xs"></span></a>
+							<div class="title">
+								<h5 class="text-overflow"><a href="{$t.url}">{$t.title}</a></h5>
+							</div>
+							<div class="subtitle text-muted text-muted text-overflow hidden-xs">{$t.zhuyan}</div>
+						</div>
+						 {/list}
+
+						</ul>
+				</div>
+			</div>
+			<div class="hy-page clearfix">
+				<ul class="cleafix">
+  {$pages}</ul>
+			</div>		</div>
+	</div>
+</div>
+
+{template "footer.html"}

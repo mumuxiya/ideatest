@@ -1,0 +1,85 @@
+{template "mheader.html"}
+<script type="text/javascript">
+    function validOldPwd() {
+        $.post('{dr_member_url('account/cpassword')}', {password: $("#oldPwd").val()}, function(data){
+            if (data) {
+                $("#err_oldPwd").html(data);
+                $("#err_oldPwd_group").addClass('has-error');
+            } else {
+                $("#err_oldPwd").html('');
+                $("#err_oldPwd_group").removeClass('has-error');
+            }
+        });
+    }
+    function validCheckPwd() {
+        if ($("#newPwd").val() == "") {
+            $("#err_checkPwd").html("密码不能为空");
+            $("#err_checkPwd_group").addClass('has-error');
+        }else if ($("#newPwd").val() != $("#checkPwd").val()) {
+            $("#err_checkPwd").html("两次密码不正确");
+            $("#err_checkPwd_group").addClass('has-error');
+        } else {
+            $("#err_checkPwd").html("");
+            $("#err_checkPwd_group").removeClass('has-error');
+        }
+    }
+</script>
+<div class="userWarp">
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel-bg"> 
+     <div class="macplus-user-pics"> 
+      <div class="macplus-user-core text-center"> 
+       <div class="macplus-user-image" data-role=""> 
+        <img class="face macplus-user-radius" src="/statics/youku/img/avatar.jpg?v=1564816680" /> 
+       </div> 
+       <span class="text-white macplus-user-padding font-16">{$member.username}</span> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="macplus-user-rows macplus-user-diss"> 
+{template "left.html"}
+     <div class="col-lg-wide-75 col-xs-1 macplus-user-t2"> 
+      <div class="macplus-user-layout macplus-pannel-bg"> 
+       <div class="macplus-user-rows"><h2>会员升级<a class="hidden-lg pull-right font-16"  href="#">返回</a></h2></div> 
+       <ul class="macplus-user-rows macplus-pannel-bg"> 
+				<table width="100%" bolder=1>
+					<thead>
+					<tr>
+						<th class=""> 名称 </th>
+						<th>天数</th>
+						<th> 费用 </th>
+						<th width=200> 操作 </th>
+					</tr>
+					</thead>
+					<tbody id="dr_body">
+				
+					{php $link = @explode(PHP_EOL, $taocan);}
+					{loop $link $t}
+					{php list($name,$day,$money)=explode('|', $t);}
+					<form action="" method="post" class="form-horizontal" novalidate>
+					<input name="name" type="hidden" class="form-control" value="{$name}">
+					<input name="day" type="hidden" class="form-control" value="{$day}">
+					<input type="hidden" name="money" value="{$money}" >
+					<tr>
+						<td class="algin_l">{$name}</td>
+						<td class="algin_l">{$day}天
+						</td>
+						<td class="algin_l">{$money}元						</td>
+						<td class="algin_l"> <button type="submit" class="btn btn-block btn-warning"><i class="fa fa-rmb"></i>付款购买</button>	</td>
+					</tr>
+					 </form>
+					{/loop}
+										
+
+                           
+					</tbody>
+				</table> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+</div> 
+{template "mfooter.html"}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>李先生@影院</title>
+</head>
+<body >
+<div class="container-fluid">
+    <div class="container">
+        <div class="row"></div>
+        <div class="nav-scroller py-1 mb-2 col-md-12">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动作</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">喜剧</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">爱情</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">科幻</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">动画</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">恐怖</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">奇幻</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">冒险</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">惊悚</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">悬疑</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">历史</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">犯罪</font></font></a>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-4 pl-1 pr-1 mb-3 shadow rounded" th:each="d:${dys}" >
+                <div class="card" style="border:0;">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="255">
+                        <a th:href="@{/play}+'?url='+${d.url}"  target="_blank"  >
+                            <img th:src="${d.imgUrl}" alt="" class="rounded img-height" width="100%" >
+                        </a>
+                    </div>
+                    <div>
+                        <a th:href="@{/play}+'?url='+${d.url}"  target="_blank"  >
+                            <p class="card-title text-truncate text-muted p-1 m-0" ><small th:text="${d.name}"></small></p>
+                            <!--                        <p class="card-text text-truncate" ><small th:text="${d.actor}">主演</small></p>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

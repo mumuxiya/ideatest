@@ -1,0 +1,118 @@
+{template "header.html"}
+<div class="typeWarp">
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel macplus-pannel-bg clearfix macplus-top-10">
+     <div class="macplus-pannel-box macplus-pannel_dd">
+      <div class="macplus-pannel_hd">
+
+	   <div class="classifyList">
+	   <ul class="macplus-screen__list filter swiper-wrapper clearfix">
+        <li class="swiper-slide"><span class="text-muted">按栏目</span></li>
+				<li class="swiper-slide <?php if ($_GET['type']=='movie'){echo "active";}?>"><a href="/index.php?c=vodlist&type=movie">电影</a></li>
+				<li class="swiper-slide <?php if ($_GET['type']=='tv'){echo "active";}?>"><a href="/index.php?c=vodlist&type=tv">连续剧</a></li>
+				<li class="swiper-slide <?php if ($_GET['type']=='zy'){echo "active";}?>"><a href="/index.php?c=vodlist&type=zy">综艺</a></li>
+				<li class="swiper-slide <?php if ($_GET['type']=='dm'){echo "active";}?>"><a href="/index.php?c=vodlist&type=dm">动漫</a></li>
+		
+       </ul>
+	   </div>
+
+  
+	   <div id="classifyList02" class="classifyList bottom-line-dot">
+	   <ul class="macplus-screen__list type swiper-wrapper clearfix">
+        <li class="swiper-slide"><span class="text-muted">按类型</span></li>
+		<li class="swiper-slide  {if $cat=='all'}active{/if}"><a href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&year={$year}&area={$area}&act={$act}&cat=all">全部</a></li>
+{loop $category $c}
+<li class="swiper-slide {if $cat==$c.link}active{/if}" ><a  href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&year={$year}&area={$area}&act={$act}&cat={$c.link}" target="_self">{$c.title}</a></li>
+{/loop}
+                       </ul>
+	   </div>
+	   <div id="classifyList03" class="classifyList bottom-line-dot">
+	   <ul class="macplus-screen__list type swiper-wrapper clearfix">
+        <li class="swiper-slide"><span class="text-muted">按地区</span></li>
+		<li class="swiper-slide {if $area=='all'}active{/if}"><a href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&area=all&year={$year}&act={$act}&cat={$cat}">全部</a></li>
+{loop $diqu $c}
+<li class="swiper-slide {if $area==$c.link}active{/if}"><a  href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&area={$c.link}&year={$year}&act={$act}&cat={$cat}" target="_self">{$c.title}</a></li>
+{/loop}
+                           </ul>
+	   </div>
+	   <div id="classifyList04" class="classifyList">
+	   <ul class="macplus-screen__list type swiper-wrapper clearfix">
+        <li class="swiper-slide"><span class="text-muted"><?php if ($_GET['type']=='zy'){echo "按明星";}else{echo "按年份";}?></span></li>
+		<li class="swiper-slide {if $year=='all'}active{/if}"><a href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&area={$area}&year=all&act={$act}&cat={$cat}">全部</a></li>
+{loop $nianfen $c}
+<li class="swiper-slide {if $year==$c.link}active{/if}"><a  href="{dr_url('vodlist/index')}&type={$type}&rank={$rank}&year={$c.link}&area={$area}&act={$act}&cat={$cat}" target="_self">{$c.title}</a></li>
+{/loop}
+                                </ul>
+	      </div>
+         </div>
+	   </div>
+	  </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplusd-list-head">
+	    <ul class="macplusd-list-hd">
+		<li <?php if ($rank=="rankhot"){echo 'class="item current"';}elseif($rank=="createtime" or $rank=="rankpoint"){echo 'class="item"';}else{ echo 'class="item current"';};?>>
+					<a href="{dr_url('vodlist/index')}&type=<?=$type?>&cat=<?=$cat?>&area=<?=$area?>&act=<?=$act?>&year=<?=$year?>&rank=rankhot">按最热</a></li>
+					<li <?php if ($rank=="createtime"){echo 'class="item current"';}else{echo 'class="item"';};?>>
+					<a href="{dr_url('vodlist/index')}&type=<?=$type?>&cat=<?=$cat?>&area=<?=$area?>&act=<?=$act?>&year=<?=$year?>&rank=createtime">按最新</a></li>
+					<li <?php if ($rank=="rankpoint"){echo 'class="item current"';}else{echo 'class="item"';};?>>
+					<a href="{dr_url('vodlist/index')}&type=<?=$type?>&cat=<?=$cat?>&area=<?=$area?>&act=<?=$act?>&year=<?=$year?>&rank=rankpoint">按好评</a></li>
+
+		<span class="more text-muted pull-right">如果喜欢请分享给您的朋友！</span>
+		</ul>
+		</div>
+       <div class="macplus-vodlist clearfix">
+	   {loop $shipinlist $t}
+         <li class="col-md-7 col-sm-4 col-xs-3">
+                    <div class="macplus-vodlist__bag">
+           <a class="macplus-vodlist__thumb lazyload" href="{dr_url('vodshow/index/')}&play={$t.coverpage}" title="{$t.title}" data-original="{$t.cover}">
+		   <span class="pic-text text-right">{$t.tag}</span></a>
+           <div class="macplus-vodlist__detail active">
+            <h4 class="title text-overflow"><a href="{dr_url('vodshow/index/')}&play={$t.coverpage}" title="{$t.title}">{$t.title}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs">{$t.desc}</p>
+           </div>
+          </div>
+		  </li>
+		  {/loop}	
+		  
+		         </div>
+<div class="macplus-page text-center clearfix">
+    <ul class="macplus-page_info">
+				<?php
+if($_GET['page'] > 1){
+     echo '<li ><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=1">首页</a></li>';
+     echo '<li ><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=' . ($_GET['page']-1) . '">上一页</a></li>';
+	 echo '<li><a>' . $_GET['page'] . '/'.$yeshu.'</a></li>';
+     } else {
+echo '<li><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=1">首页</a></li>';
+echo '<li ><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=1">上一页</a></li>';
+ echo '<li><a>1/'.$yeshu.'</a></li>';
+}
+if(!isset($_GET['page'])) {
+echo '<li><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=2">下一页</a></li>';
+echo '<li><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page='.$yeshu.'">尾页</a></li>';
+}
+elseif($_GET['page'] < $yeshu){
+     echo '<li ><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page=' . ($_GET['page']+1) . '">下一页</a></li>';
+     echo '<li ><a href="index.php?c=vodlist&m=index&type='.$type.'&cat='.$cat.'&area='.$area.'&act='.$act.'&year='.$year.'&rank='.$rank.'&page='.$yeshu.'">尾页</a></li>';
+     } 
+else {
+echo '<li ><a>下一页</a></li>';
+echo '<li><a>尾页</a></li>';
+}	 
+echo '<li><a>共'.$yeshu.'页</a></li>';
+?>
+
+    </ul>
+</div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+{template "footer.html"}

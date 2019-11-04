@@ -1,0 +1,384 @@
+2019-10-30 12:58:56,357 DEBUG {conn-10001} connected
+2019-10-30 12:58:56,361 DEBUG {conn-10002} connected
+2019-10-30 12:58:56,363 DEBUG {conn-10003} connected
+2019-10-30 12:58:56,365 DEBUG {conn-10004} connected
+2019-10-30 12:58:56,367 DEBUG {conn-10005} connected
+2019-10-30 12:58:56,372 DEBUG {conn-10005} pool-connect
+2019-10-30 12:58:56,374 DEBUG {conn-10005} pool-recycle
+2019-10-30 12:58:56,870 DEBUG {conn-10005} pool-connect
+2019-10-30 12:58:56,935 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 12:58:56,940 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 12:58:56,940 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 12:58:56,946 DEBUG {conn-10005, pstmt-20000} executed. 7.623994 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 12:58:56,948 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 12:58:56,949 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 12:58:56,952 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 12:58:56,953 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 12:58:56,954 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 12:58:56,955 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:03:14,790 DEBUG {conn-10005} pool-connect
+2019-10-30 13:03:14,809 DEBUG {conn-10005, pstmt-20001} created. SELECT `id`, `username`, `password` FROM `t_user` WHERE username=?
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001} Parameters : [123]
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001} Types : [VARCHAR]
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001} executed. 0.693571 millis. SELECT `id`, `username`, `password` FROM `t_user` WHERE username=?
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001, rs-50001} open
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001, rs-50001} Header: [id, username, password]
+2019-10-30 13:03:14,810 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [2, 123, 123]
+2019-10-30 13:03:14,814 DEBUG {conn-10005, pstmt-20002} created. select r.* from t_role r,t_user_role ur where ur.user_id=? AND r.id=ur.role_id
+2019-10-30 13:03:14,814 DEBUG {conn-10005, pstmt-20002} Parameters : [2]
+2019-10-30 13:03:14,815 DEBUG {conn-10005, pstmt-20002} Types : [INTEGER]
+2019-10-30 13:03:14,821 DEBUG {conn-10005, pstmt-20002} executed. 6.592968 millis. select r.* from t_role r,t_user_role ur where ur.user_id=? AND r.id=ur.role_id
+2019-10-30 13:03:14,821 DEBUG {conn-10005, pstmt-20002, rs-50002} open
+2019-10-30 13:03:14,821 DEBUG {conn-10005, pstmt-20002, rs-50002} Header: [id, name]
+2019-10-30 13:03:14,821 DEBUG {conn-10005, pstmt-20002, rs-50002} Result: [2, 管理员]
+2019-10-30 13:03:14,823 DEBUG {conn-10005, pstmt-20003} created. select p.* from t_permission p,t_role_permission rp where rp.role_id=? AND p.id=rp.permission_id
+2019-10-30 13:03:14,823 DEBUG {conn-10005, pstmt-20003} Parameters : [2]
+2019-10-30 13:03:14,823 DEBUG {conn-10005, pstmt-20003} Types : [INTEGER]
+2019-10-30 13:03:14,824 DEBUG {conn-10005, pstmt-20003} executed. 0.639454 millis. select p.* from t_permission p,t_role_permission rp where rp.role_id=? AND p.id=rp.permission_id
+2019-10-30 13:03:14,824 DEBUG {conn-10005, pstmt-20003, rs-50003} open
+2019-10-30 13:03:14,824 DEBUG {conn-10005, pstmt-20003, rs-50003} Header: [id, name, url]
+2019-10-30 13:03:14,824 DEBUG {conn-10005, pstmt-20003, rs-50003} closed
+2019-10-30 13:03:14,824 DEBUG {conn-10005, pstmt-20003} clearParameters. 
+2019-10-30 13:03:14,825 DEBUG {conn-10005, pstmt-20002, rs-50002} closed
+2019-10-30 13:03:14,825 DEBUG {conn-10005, pstmt-20002} clearParameters. 
+2019-10-30 13:03:14,825 DEBUG {conn-10005, pstmt-20001, rs-50001} closed
+2019-10-30 13:03:14,825 DEBUG {conn-10005, pstmt-20001} clearParameters. 
+2019-10-30 13:03:14,825 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:03:41,638 DEBUG {conn-10005} pool-connect
+2019-10-30 13:03:41,671 DEBUG {conn-10005, pstmt-20004} created. SELECT COUNT(1) FROM t_images
+2019-10-30 13:03:41,671 DEBUG {conn-10005, pstmt-20004} Parameters : []
+2019-10-30 13:03:41,671 DEBUG {conn-10005, pstmt-20004} Types : []
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004, rs-50004} query executed. 0.635411 millis. SELECT COUNT(1) FROM t_images
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004, rs-50004} open
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004, rs-50004} Header: [COUNT(1)]
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004, rs-50004} Result: [19]
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004, rs-50004} closed
+2019-10-30 13:03:41,672 DEBUG {conn-10005, pstmt-20004} clearParameters. 
+2019-10-30 13:03:41,676 DEBUG {conn-10005, pstmt-20005} created. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-30 13:03:41,676 DEBUG {conn-10005, pstmt-20005} Parameters : [0, 10]
+2019-10-30 13:03:41,676 DEBUG {conn-10005, pstmt-20005} Types : [BIGINT, BIGINT]
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005} executed. 0.446 millis. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005, rs-50005} open
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005, rs-50005} Header: [id, name, url]
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [1, 123, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_1.jpg]
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [2, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_11.jpg]
+2019-10-30 13:03:41,677 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [3, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_15.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [4, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [5, null, image.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [6, null, psb.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [7, null, image.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [8, null, image.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [9, null, image.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} Result: [10, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005, rs-50005} closed
+2019-10-30 13:03:41,678 DEBUG {conn-10005, pstmt-20005} clearParameters. 
+2019-10-30 13:03:41,678 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:31:47,000 DEBUG {conn-10005} pool-connect
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004} Parameters : []
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004} Types : []
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004, rs-50006} query executed. 0.417697 millis. SELECT COUNT(1) FROM t_images
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004, rs-50006} open
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004, rs-50006} Header: [COUNT(1)]
+2019-10-30 13:31:47,001 DEBUG {conn-10005, pstmt-20004, rs-50006} Result: [19]
+2019-10-30 13:31:47,002 DEBUG {conn-10005, pstmt-20004, rs-50006} closed
+2019-10-30 13:31:47,002 DEBUG {conn-10005, pstmt-20004} clearParameters. 
+2019-10-30 13:31:47,002 DEBUG {conn-10005, pstmt-20005} Parameters : [0, 10]
+2019-10-30 13:31:47,002 DEBUG {conn-10005, pstmt-20005} Types : [BIGINT, BIGINT]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005} executed. 0.456264 millis. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} open
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Header: [id, name, url]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [1, 123, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_1.jpg]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [2, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_11.jpg]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [3, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_15.jpg]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [4, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [5, null, image.jpg]
+2019-10-30 13:31:47,003 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [6, null, psb.jpg]
+2019-10-30 13:31:47,004 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [7, null, image.jpg]
+2019-10-30 13:31:47,004 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [8, null, image.jpg]
+2019-10-30 13:31:47,004 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [9, null, image.jpg]
+2019-10-30 13:31:47,004 DEBUG {conn-10005, pstmt-20005, rs-50007} Result: [10, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:31:47,005 DEBUG {conn-10005, pstmt-20005, rs-50007} closed
+2019-10-30 13:31:47,005 DEBUG {conn-10005, pstmt-20005} clearParameters. 
+2019-10-30 13:31:47,005 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:37:24,119 DEBUG {conn-10005} pool-connect
+2019-10-30 13:37:24,120 DEBUG {conn-10005, pstmt-20004} Parameters : []
+2019-10-30 13:37:24,120 DEBUG {conn-10005, pstmt-20004} Types : []
+2019-10-30 13:37:24,120 DEBUG {conn-10005, pstmt-20004, rs-50008} query executed. 0.411789 millis. SELECT COUNT(1) FROM t_images
+2019-10-30 13:37:24,120 DEBUG {conn-10005, pstmt-20004, rs-50008} open
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20004, rs-50008} Header: [COUNT(1)]
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20004, rs-50008} Result: [19]
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20004, rs-50008} closed
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20004} clearParameters. 
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20005} Parameters : [0, 10]
+2019-10-30 13:37:24,121 DEBUG {conn-10005, pstmt-20005} Types : [BIGINT, BIGINT]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005} executed. 0.373222 millis. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} open
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Header: [id, name, url]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [1, 123, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_1.jpg]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [2, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_11.jpg]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [3, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_15.jpg]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [4, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:37:24,122 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [5, null, image.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [6, null, psb.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [7, null, image.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [8, null, image.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [9, null, image.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} Result: [10, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005, rs-50009} closed
+2019-10-30 13:37:24,123 DEBUG {conn-10005, pstmt-20005} clearParameters. 
+2019-10-30 13:37:24,123 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:40:52,037 DEBUG {conn-10005} pool-connect
+2019-10-30 13:40:52,039 DEBUG {conn-10005, pstmt-20006} created. SELECT  id,name  FROM t_type
+2019-10-30 13:40:52,039 DEBUG {conn-10005, pstmt-20006} Parameters : []
+2019-10-30 13:40:52,039 DEBUG {conn-10005, pstmt-20006} Types : []
+2019-10-30 13:40:52,040 DEBUG {conn-10005, pstmt-20006} executed. 1.127752 millis. SELECT  id,name  FROM t_type
+2019-10-30 13:40:52,040 DEBUG {conn-10005, pstmt-20006, rs-50010} open
+2019-10-30 13:40:52,040 DEBUG {conn-10005, pstmt-20006, rs-50010} Header: [id, name]
+2019-10-30 13:40:52,041 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [1, 首页]
+2019-10-30 13:40:52,041 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [2, 壁纸]
+2019-10-30 13:40:52,042 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [3, 情侣头像]
+2019-10-30 13:40:52,042 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [4, 女生头像]
+2019-10-30 13:40:52,042 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [5, 男生头像]
+2019-10-30 13:40:52,042 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [6, 闺蜜头像]
+2019-10-30 13:40:52,042 DEBUG {conn-10005, pstmt-20006, rs-50010} Result: [7, 潮图]
+2019-10-30 13:40:52,043 DEBUG {conn-10005, pstmt-20006, rs-50010} closed
+2019-10-30 13:40:52,043 DEBUG {conn-10005, pstmt-20006} clearParameters. 
+2019-10-30 13:40:52,043 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:41:03,590 DEBUG {conn-10005} pool-connect
+2019-10-30 13:41:03,591 DEBUG {conn-10005, pstmt-20006} Parameters : []
+2019-10-30 13:41:03,591 DEBUG {conn-10005, pstmt-20006} Types : []
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006} executed. 0.911284 millis. SELECT  id,name  FROM t_type
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} open
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} Header: [id, name]
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [1, 首页]
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [2, 壁纸]
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [3, 情侣头像]
+2019-10-30 13:41:03,592 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [4, 女生头像]
+2019-10-30 13:41:03,593 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [5, 男生头像]
+2019-10-30 13:41:03,593 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [6, 闺蜜头像]
+2019-10-30 13:41:03,593 DEBUG {conn-10005, pstmt-20006, rs-50011} Result: [7, 潮图]
+2019-10-30 13:41:03,593 DEBUG {conn-10005, pstmt-20006, rs-50011} closed
+2019-10-30 13:41:03,593 DEBUG {conn-10005, pstmt-20006} clearParameters. 
+2019-10-30 13:41:03,593 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:41:36,635 DEBUG {conn-10005} pool-connect
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006} Parameters : []
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006} Types : []
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006} executed. 0.429828 millis. SELECT  id,name  FROM t_type
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006, rs-50012} open
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006, rs-50012} Header: [id, name]
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [1, 首页]
+2019-10-30 13:41:36,636 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [2, 壁纸]
+2019-10-30 13:41:36,637 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [3, 情侣头像]
+2019-10-30 13:41:36,637 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [4, 女生头像]
+2019-10-30 13:41:36,637 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [5, 男生头像]
+2019-10-30 13:41:36,637 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [6, 闺蜜头像]
+2019-10-30 13:41:36,638 DEBUG {conn-10005, pstmt-20006, rs-50012} Result: [7, 潮图]
+2019-10-30 13:41:36,638 DEBUG {conn-10005, pstmt-20006, rs-50012} closed
+2019-10-30 13:41:36,638 DEBUG {conn-10005, pstmt-20006} clearParameters. 
+2019-10-30 13:41:36,638 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:53:47,735 DEBUG {conn-10001} connected
+2019-10-30 13:53:47,739 DEBUG {conn-10002} connected
+2019-10-30 13:53:47,741 DEBUG {conn-10003} connected
+2019-10-30 13:53:47,743 DEBUG {conn-10004} connected
+2019-10-30 13:53:47,745 DEBUG {conn-10005} connected
+2019-10-30 13:53:47,750 DEBUG {conn-10005} pool-connect
+2019-10-30 13:53:47,752 DEBUG {conn-10005} pool-recycle
+2019-10-30 13:53:48,253 DEBUG {conn-10005} pool-connect
+2019-10-30 13:53:48,318 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 13:53:48,324 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 13:53:48,324 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 13:53:48,329 DEBUG {conn-10005, pstmt-20000} executed. 7.694906 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 13:53:48,331 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 13:53:48,332 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 13:53:48,335 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 13:53:48,337 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 13:53:48,338 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:04:43,469 DEBUG {conn-10005} pool-connect
+2019-10-30 14:04:43,470 DEBUG {conn-10005, pstmt-20001} created. SELECT  id,name  FROM t_type
+2019-10-30 14:04:43,470 DEBUG {conn-10005, pstmt-20001} Parameters : []
+2019-10-30 14:04:43,470 DEBUG {conn-10005, pstmt-20001} Types : []
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001} executed. 0.410855 millis. SELECT  id,name  FROM t_type
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001, rs-50001} open
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001, rs-50001} Header: [id, name]
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [1, 首页]
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [2, 壁纸]
+2019-10-30 14:04:43,471 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [3, 情侣头像]
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [4, 女生头像]
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [5, 男生头像]
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [6, 闺蜜头像]
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001, rs-50001} Result: [7, 潮图]
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001, rs-50001} closed
+2019-10-30 14:04:43,472 DEBUG {conn-10005, pstmt-20001} clearParameters. 
+2019-10-30 14:04:43,472 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:05:24,217 DEBUG {conn-10001} connected
+2019-10-30 14:05:24,221 DEBUG {conn-10002} connected
+2019-10-30 14:05:24,223 DEBUG {conn-10003} connected
+2019-10-30 14:05:24,225 DEBUG {conn-10004} connected
+2019-10-30 14:05:24,226 DEBUG {conn-10005} connected
+2019-10-30 14:05:24,231 DEBUG {conn-10005} pool-connect
+2019-10-30 14:05:24,233 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:05:24,701 DEBUG {conn-10005} pool-connect
+2019-10-30 14:05:24,766 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:05:24,771 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:05:24,771 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:05:24,776 DEBUG {conn-10005, pstmt-20000} executed. 7.846683 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:05:24,779 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:05:24,780 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:05:24,783 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:05:24,784 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:05:24,785 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:05:24,786 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:09:47,909 DEBUG {conn-10001} connected
+2019-10-30 14:09:47,912 DEBUG {conn-10002} connected
+2019-10-30 14:09:47,914 DEBUG {conn-10003} connected
+2019-10-30 14:09:47,916 DEBUG {conn-10004} connected
+2019-10-30 14:09:47,918 DEBUG {conn-10005} connected
+2019-10-30 14:09:47,922 DEBUG {conn-10005} pool-connect
+2019-10-30 14:09:47,923 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:09:48,399 DEBUG {conn-10005} pool-connect
+2019-10-30 14:09:48,463 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:09:48,468 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:09:48,469 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:09:48,474 DEBUG {conn-10005, pstmt-20000} executed. 7.686198 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:09:48,476 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:09:48,477 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:09:48,480 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:09:48,481 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:09:48,481 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:09:48,482 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:09:48,482 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:09:48,482 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:09:48,482 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:09:48,482 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:09:48,483 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:11:25,152 DEBUG {conn-10001} connected
+2019-10-30 14:11:25,157 DEBUG {conn-10002} connected
+2019-10-30 14:11:25,158 DEBUG {conn-10003} connected
+2019-10-30 14:11:25,160 DEBUG {conn-10004} connected
+2019-10-30 14:11:25,161 DEBUG {conn-10005} connected
+2019-10-30 14:11:25,166 DEBUG {conn-10005} pool-connect
+2019-10-30 14:11:25,168 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:11:25,632 DEBUG {conn-10005} pool-connect
+2019-10-30 14:11:25,696 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:11:25,701 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:11:25,702 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:11:25,707 DEBUG {conn-10005, pstmt-20000} executed. 7.595069 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:11:25,709 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:11:25,710 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:11:25,713 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:11:25,714 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:11:25,715 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:11:25,716 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:11:47,314 DEBUG {conn-10001} connected
+2019-10-30 14:11:47,317 DEBUG {conn-10002} connected
+2019-10-30 14:11:47,318 DEBUG {conn-10003} connected
+2019-10-30 14:11:47,320 DEBUG {conn-10004} connected
+2019-10-30 14:11:47,322 DEBUG {conn-10005} connected
+2019-10-30 14:11:47,326 DEBUG {conn-10005} pool-connect
+2019-10-30 14:11:47,328 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:11:47,779 DEBUG {conn-10005} pool-connect
+2019-10-30 14:11:47,844 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:11:47,850 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:11:47,850 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:11:47,855 DEBUG {conn-10005, pstmt-20000} executed. 7.743736 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:11:47,857 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:11:47,859 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:11:47,861 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:11:47,863 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:11:47,864 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:11:47,864 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:12:42,645 DEBUG {conn-10001} connected
+2019-10-30 14:12:42,649 DEBUG {conn-10002} connected
+2019-10-30 14:12:42,651 DEBUG {conn-10003} connected
+2019-10-30 14:12:42,653 DEBUG {conn-10004} connected
+2019-10-30 14:12:42,655 DEBUG {conn-10005} connected
+2019-10-30 14:12:42,660 DEBUG {conn-10005} pool-connect
+2019-10-30 14:12:42,662 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:12:43,138 DEBUG {conn-10005} pool-connect
+2019-10-30 14:12:43,205 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:12:43,210 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:12:43,210 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:12:43,216 DEBUG {conn-10005, pstmt-20000} executed. 7.785724 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:12:43,219 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:12:43,220 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:12:43,223 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:12:43,224 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:12:43,224 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:12:43,224 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:12:43,224 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:12:43,225 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:12:43,225 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:12:43,225 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:12:43,226 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:14:54,953 DEBUG {conn-10001} connected
+2019-10-30 14:14:54,956 DEBUG {conn-10002} connected
+2019-10-30 14:14:54,958 DEBUG {conn-10003} connected
+2019-10-30 14:14:54,960 DEBUG {conn-10004} connected
+2019-10-30 14:14:54,962 DEBUG {conn-10005} connected
+2019-10-30 14:14:54,966 DEBUG {conn-10005} pool-connect
+2019-10-30 14:14:54,968 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:14:55,427 DEBUG {conn-10005} pool-connect
+2019-10-30 14:14:55,493 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:14:55,498 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:14:55,498 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:14:55,503 DEBUG {conn-10005, pstmt-20000} executed. 7.780436 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:14:55,506 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:14:55,507 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:14:55,510 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:14:55,511 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:14:55,512 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:14:55,512 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:15:39,094 DEBUG {conn-10001} connected
+2019-10-30 14:15:39,097 DEBUG {conn-10002} connected
+2019-10-30 14:15:39,099 DEBUG {conn-10003} connected
+2019-10-30 14:15:39,100 DEBUG {conn-10004} connected
+2019-10-30 14:15:39,102 DEBUG {conn-10005} connected
+2019-10-30 14:15:39,106 DEBUG {conn-10005} pool-connect
+2019-10-30 14:15:39,108 DEBUG {conn-10005} pool-recycle
+2019-10-30 14:15:39,564 DEBUG {conn-10005} pool-connect
+2019-10-30 14:15:39,629 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:15:39,634 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-30 14:15:39,634 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-30 14:15:39,640 DEBUG {conn-10005, pstmt-20000} executed. 7.792877 millis. SELECT  id,name,url  FROM t_permission
+2019-10-30 14:15:39,642 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-30 14:15:39,643 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name, url]
+2019-10-30 14:15:39,646 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, anon, /code/**]
+2019-10-30 14:15:39,647 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, anon, /login/**]
+2019-10-30 14:15:39,647 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, anon, /dy]
+2019-10-30 14:15:39,648 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, logout, /logout]
+2019-10-30 14:15:39,648 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, p:test1, /test1]
+2019-10-30 14:15:39,648 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, anon, /**]
+2019-10-30 14:15:39,648 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-30 14:15:39,648 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-30 14:15:39,649 DEBUG {conn-10005} pool-recycle

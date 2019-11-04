@@ -1,0 +1,162 @@
+{template "header.html"}
+<div class="detaWarp">
+<div class="detail-cover lazyload"></div>
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-1 col-xs-1 macplus-top-0">
+     <div class="macplus-pannel macplus-pannel-dt clearfix">
+      <div class="macplus-pannel-box clearfix">
+	  <div class="douban visible-lg"><i>评分</i><span class="text" id="pingfen">{$star}</span></div>
+       <div class="macplus-content__thumb">
+        <a class="macplus-vodlist__thumb picture v-thumb" href="{dr_url('vodshow/play')}&play={$play}&id=0&xl=0" title="{$title}">
+		<img class="lazyload" src="/statics/youku/img/load.gif" data-original="{$thumb}" />
+		<span class="play-mask hidden-xs"><em class="play-icon-s"></em></span>
+		<span class="pic-text text-right"></span>
+		</a>
+       </div>
+       <div class="macplus-content__detail">
+        <h1 class="title text-overflow">{$title}</h1>
+        <div id="detail-rating" class="hidden-xs">
+		<div id="rating" class="macplus-ting" data-mid="1" data-id="997" data-score="5">
+		<ul class="rating">
+        <li class="one current active" title="很差" val="1">很差</li>
+        <li class="two current active" title="较差" val="2">较差</li>
+        <li class="three current active" title="还行" val="3">还行</li>
+        <li class="four active" title="推荐" val="4">推荐</li>
+        <li class="five active" title="力荐" val="5">力荐</li>
+       </ul>
+    <span id="ratewords">力荐</span>
+	</div>
+	</div>
+		<div class="play-ail clearfix">
+        <p class="data col-lg-1 col-xs-1 text-overflow padding-0"><span class="text-muted">导演：</span>{$director}</p>
+		<p class="data col-lg-3 col-xs-1 padding-0"><span class="text-muted">年代：</span>{$year}	</p>
+		<p class="data col-lg-66 col-xs-1 padding-0"><span class="text-muted">地区：</span>{$area}</p>
+		<p class="data col-lg-3 col-xs-1 text-overflow padding-0"><span class="text-muted">类型：</span>{$type}</p>
+		<p class="data col-lg-3 col-xs-1 text-overflow padding-0"><span class="text-muted">主演：</span>{$actor}</p>
+        <p class="data col-lg-3 col-xs-1 visible-lg hide padding-0"><span class="text-muted">更新时间：</span></p>
+		<p class="detail visible-lg hide"><span class="text-muted">简介：</span><span id="cText" class="macplus-cText">{$content}</span></p>
+		<script language="javascript"> var conText = ""; hideText("cText", 100, "<i></i>", "<i></i>"); </script>
+		</div>
+        <div class="play-btn clearfix"><a class="btn btn-primary" href="{dr_url('cxplay/play')}&play={$play}&id=0&xl=0">立即播放</a></div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+  <div class="container">
+   <div class="row">
+	 <div class="col-lg-wide-75 col-xs-1 macplus-top-1 macplus-lefter">
+	 		<div class="detail-intro visible-xs clearfix">
+			<div class="detail-intro-txt text-etwo"><strong>简介：</strong>{$content}<span class="more"><a href="javascript:void(0)" class="link"><i class="icon iconfont icon-moreunfold"></i></a></span></div>
+		</div>
+
+
+		<div class="macplus-play-list">
+      <div class="details-play-title clearfix">
+      <ul class="nav nav-tabs hidden-xs" id="playTab">
+	  {loop $playurl $i $c}
+		<li class="hidden-xs {if $i==0}active{/if}"><a class="gico kkm3u8" href="#con_playlist_{$i}" data-toggle="tab">{$c.name}</a></li>
+		{/loop}
+	     </ul>
+<ul class="nav nav-tabs hidden-sm hidden-md hidden-lg">
+         <li class="dropdown mplayer active">
+		 	 <a href="#" id="myTabDrop2" class="gico kkm3u8" data-toggle="dropdown"><span class="name">切换来源</span><b class="caret"></b></a>
+
+				
+<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop2">
+                     {loop $playurl $i $c}<li>
+                      <a class="gico kuyun" href="#con_playlist_{$i}" tabindex="-1" data-toggle="tab">{$c.name}</a></li>
+                    {/loop}
+                  </ul>	</li> 			
+  		<li class="pull-right">无法播放切换<span class="text-green">解析</span>或<span class="text-green">播放源</span>。</li>
+			   </ul>
+			</div>
+	<div class="macplus-pannel macplus-pannel-box macplus-pannel-bg">
+		 <div class="playlist macplus-pannel_hd">
+{loop $playurl $i $c}	 
+		 <ul class="macplus-content__playlist column8 clearfix fade {if $i==0}in active{/if}" id="con_playlist_{$i}">
+{php $url = @explode('#', $c['url']);}										
+{loop $url $k $p}
+{php list( $name,$link)=explode('$', $p);}
+<li ><a data-num='{$p.jishu}' href="{dr_url('cxplay/play')}&id={$id}&sid={$k}&xl={$i}" class='btn-play-source'>{$name}</a></li>
+
+{/loop}
+		  		  </ul>
+{/loop}
+       	      </div>
+  </div>
+</div>
+
+
+     <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+         <h3 class="title">猜你喜欢</h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+        <ul class="macplus-vodlist__bd clearfix">
+{list action=module module=vods order=rand num=16}
+		 
+		 <li class="col-md-5 col-sm-4 col-xs-3">
+		            <div class="macplus-vodlist__bag">
+           <a class="macplus-vodlist__thumb lazyload" href="{$t.url}" title="{$t.title}" data-original="{if $t.caijipic}{$t.caijipic}{else}{dr_thumb($t.thumb)}{/if}">
+		   <span class="pic-text text-right"></span></a>
+           <div class="macplus-vodlist__detail active">
+            <h4 class="title text-overflow"><a href="{$t.url}" title="{$t.title}">{$t.title}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs"></p>
+           </div>
+          </div>
+		  </li>
+{/list}
+		        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-lg-wide-25 col-xs-1 visible-lg hide macplus-righter">
+     <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+		 <h3 class="title"><a href="" target="_blank">热播榜</a></h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+		        <ul class="macplus-vodlist__media active col-pd clearfix">
+					<li class="padding-0">
+				<a class="macplus-vodlist__thumb active lazyload img-shadow" href="#" title="极品老妈第六季" data-original="http://img.kuyun88.com/pic/uploadimg/2018-9/20189291217452437.jpg">						
+				<span class="play-mask hidden-xs"><em class="play-icon-s"></em></span>
+				<span class="pic-text text-center">广告</span>
+				<span class="pic-tag pic-tag-h">Top1</span>						
+				</a>
+			</li>
+		          </ul>
+        <ul class="macplus-vodlist__rank col-pd clearfix">
+		{list action=module module=vods order=hits num=16}
+ <li>	<a class="text-overflow" href="{$t.url}" title="{dr_strcut($t.title, 35)}"><span class="text-muted pull-right">{$t.hits}</span>	<em class="text-red">{$key+1} . </em>{dr_strcut($t.title, 35)}</a>
+</li>	
+{/list}	
+
+		        </ul>
+		       </div>
+      </div>
+
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<span style="display:none" class="mac_history_set" alt="设置视频历史记录" data-name="[日韩剧]坂道上的家/育儿危机" data-pic="http://img.kuyun88.com/pic/uploadimg/2019-4/201942820315450823.jpg"></span>
+
+
+<script type="text/javascript" src="/statics/youku/js/qireobj.js"></script>
+<script type="text/javascript" src="/statics/youku/js/gold.js"></script>
+
+{template "footer.html"}

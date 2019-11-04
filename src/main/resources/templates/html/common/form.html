@@ -1,0 +1,83 @@
+<?php $indexc=$catid ? 0 : 1;?>{template "header.html", "/"}
+<script type="text/javascript">
+    $(function() {
+        {if $result}
+        dr_tips('{$result.msg}');
+        {/if}
+    });
+</script>
+<div class="container Compatible gbook">
+    <div class="row">
+	    <div class="col-lg-wide-3 col-xs-1 macplus-top-1 macplus-lefter">
+	     	<div class="macplus-pannel macplus-pannel-bg clearfix">
+	     		<div class="macplus-pannel-box clearfix"> 
+	     			<div class="macplus-pannel_hd">
+						<div class="macplus-pannel__head clearfix">
+							<h3 class="title">我要留言</h3>						
+						</div>																		
+					</div>
+	     			<div class="col-pd clearfix">
+	     			<form action="" method="post" name="myform" id="myform">   	     					
+	     				<ul class="gbook-form">	
+						<li class="col-xs-1"><input type="text" name="data[title]" id="dr_title" class="mac_verify form-control" placeholder="主题"></li>
+							<li class="col-xs-1"><textarea class="form-control" name="data[neirong]" placeholder="输入留言内容"></textarea></li>	
+							{if $code}<li class="col-xs-3"><input type="text" name="code" class="mac_verify form-control" placeholder="验证码"></li>
+							<li class="col-xs-3">{dr_code(120, 35)}{/if}
+														<li class="col-xs-3"><input class="btn btn-primary pull-right gbook_submit" type="submit" value="提交" ></li>
+	     				</ul>
+	     			  </form>
+	     			</div>
+	     		</div>
+	     	</div>
+	    </div>
+	    <div class="col-lg-wide-7 col-xs-1 macplus-top-1 macplus-righter">
+		<div class="macplus-pannel macplus-pannel-bg clearfix">
+	     		<div class="macplus-pannel-box clearfix"> 
+	     			<div class="macplus-pannel_hd">
+						<div class="macplus-pannel__head clearfix">
+							
+					
+							<h3 class="title">留言版</h3>						
+						</div>																		
+					</div>
+			   <div class="macplus-pannel_bd">
+				<ul class="macplus-vodlist__bd clearfix">
+				{list action=form form=1 }
+				<li class="macplus-comm-item top-line">
+					  <img class="macplus-comm-roun" src="/statics/youku/img/avatar.jpg" />
+					   <div class="macplus-comm-head">
+						<strong class="macplus-comm-line">{$t.title}</strong>
+						<span class="macplus-comm-tips">{$t.inputtime}</span>
+					   </div>
+					   <div class="macplus-comm-cont">
+					   {$t.neirong}
+					   {if $t.replay}
+					  <div class="macplus-comm-item macplus-comm-hui">
+					  <img class="macplus-comm-roun" src="/statics/youku/img/admin.png" />
+					   <div class="macplus-comm-head">
+						<strong class="macplus-comm-line text-red">管理员回复</strong>
+						<span class="macplus-comm-tips"></span>
+					   </div>
+					   <div class="macplus-comm-cont">
+					  {$t.replay}
+					   </div>
+					   </div>
+					   {/if}
+			
+					   </div>
+					   </li>
+					   {/list}
+								   </div>
+			</div>
+        </div>
+     </div>
+   </div>
+</div>
+<script>
+        $(function(){
+            MAC.Gbook.Login = 0;
+            MAC.Gbook.Verify = 1;
+            MAC.Gbook.Init();
+        });
+</script>
+{template "footer.html"}

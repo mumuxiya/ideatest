@@ -1,0 +1,59 @@
+{template "header.html"}
+<div class="container">
+			<div class="row">				
+				<div class="stui-pannel stui-pannel-bg clearfix">
+					<div class="stui-pannel-box clearfix">
+						<div class="col-md-wide-6 col-xs-1">
+							<div class="stui-vodlist__thumb" style="background: url({dr_thumb($thumb)})  no-repeat; background-position:50% 50%; background-size: cover; padding-top: 50%; "></div>																									
+						</div>
+					    <div class="col-md-wide-4 col-xs-1">
+					    	<h3 class="topic-title">{$title}</h3>
+					        <p class="topic-desc text-muted"><p>{$content}</p></p>	
+					        <div class="share bdsharebuttonbox hidden-sm hidden-xs"></div>
+					    </div>
+					</div>					
+				</div>
+				<div class="stui-pannel stui-pannel-bg clearfix">
+					<div class="stui-pannel-box">
+						<div class="stui-pannel_hd">
+							<div class="stui-pannel__head clearfix">
+								<span class="more text-muted pull-right hidden-xs"></span>
+								<h3 class="title">
+									<img src="http://www.s1168.cn/statics/icon/icon_1.png"/> 该专题包含的影片
+								</h3>														
+							</div>								
+						</div>
+						<div class="stui-pannel_bd clearfix">
+                          {if $xgys}
+							<ul class="stui-vodlist clearfix">
+ {list action=module module=vods IN_id=$xgys order=id}
+
+  <li class="col-md-6 col-sm-4 col-xs-3">
+									<div class="stui-vodlist__box">
+	<a class="stui-vodlist__thumb lazyload" href="{$t.url}" title="{$t.title}" data-original="{dr_thumb($t.thumb)}">						
+		<span class="play hidden-xs"></span>	
+		<span class="pic-text text-right"></span>
+	</a>									
+	<div class="stui-vodlist__detail">
+		<h4 class="title text-overflow"><a href="{$t.url}" title="{$t.title}">{$t.title}</a></h4>
+		<p class="text text-overflow text-muted hidden-xs">{$t.zhuyan}</p>
+	</div>												
+</div>													
+								</li>
+{/list}
+									 
+							</ul>
+{/if}
+						</div>
+					</div>				
+				</div>					
+												
+			</div>
+		</div>
+		<style type="text/css">
+			.topic-title{ margin: 20px 0 20px;}
+			.topic-desc{ margin-bottom: 20px;}
+			@media (max-width: 1024px){.topic-title{ margin: 0 0 10px; font-size: 16px;}.topic-desc{ margin: 0;}}
+		</style>
+
+{template "footer.html"}

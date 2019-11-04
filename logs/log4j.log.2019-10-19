@@ -1,0 +1,1007 @@
+2019-10-19 12:19:01,281 DEBUG {conn-10001} connected
+2019-10-19 12:19:01,285 DEBUG {conn-10002} connected
+2019-10-19 12:19:01,286 DEBUG {conn-10003} connected
+2019-10-19 12:19:01,288 DEBUG {conn-10004} connected
+2019-10-19 12:19:01,289 DEBUG {conn-10005} connected
+2019-10-19 12:19:01,292 DEBUG {conn-10005} pool-connect
+2019-10-19 12:19:01,295 DEBUG {conn-10005} pool-recycle
+2019-10-19 12:33:51,046 DEBUG {conn-10001} connected
+2019-10-19 12:33:51,049 DEBUG {conn-10002} connected
+2019-10-19 12:33:51,050 DEBUG {conn-10003} connected
+2019-10-19 12:33:51,052 DEBUG {conn-10004} connected
+2019-10-19 12:33:51,053 DEBUG {conn-10005} connected
+2019-10-19 12:33:51,056 DEBUG {conn-10005} pool-connect
+2019-10-19 12:33:51,134 DEBUG {conn-10005} pool-recycle
+2019-10-19 12:38:34,388 DEBUG {conn-10001} connected
+2019-10-19 12:38:34,391 DEBUG {conn-10002} connected
+2019-10-19 12:38:34,392 DEBUG {conn-10003} connected
+2019-10-19 12:38:34,394 DEBUG {conn-10004} connected
+2019-10-19 12:38:34,395 DEBUG {conn-10005} connected
+2019-10-19 12:38:34,398 DEBUG {conn-10005} pool-connect
+2019-10-19 12:38:34,400 DEBUG {conn-10005} pool-recycle
+2019-10-19 12:46:18,511 DEBUG {conn-10001} connected
+2019-10-19 12:46:18,514 DEBUG {conn-10002} connected
+2019-10-19 12:46:18,516 DEBUG {conn-10003} connected
+2019-10-19 12:46:18,517 DEBUG {conn-10004} connected
+2019-10-19 12:46:18,519 DEBUG {conn-10005} connected
+2019-10-19 12:46:18,521 DEBUG {conn-10005} pool-connect
+2019-10-19 12:46:18,523 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:04:29,389 DEBUG {conn-10001} connected
+2019-10-19 14:04:29,392 DEBUG {conn-10002} connected
+2019-10-19 14:04:29,394 DEBUG {conn-10003} connected
+2019-10-19 14:04:29,395 DEBUG {conn-10004} connected
+2019-10-19 14:04:29,397 DEBUG {conn-10005} connected
+2019-10-19 14:04:29,399 DEBUG {conn-10005} pool-connect
+2019-10-19 14:04:29,401 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:04:29,768 DEBUG {conn-10001} closed
+2019-10-19 14:04:29,768 DEBUG {conn-10002} closed
+2019-10-19 14:04:29,768 DEBUG {conn-10003} closed
+2019-10-19 14:04:29,768 DEBUG {conn-10004} closed
+2019-10-19 14:04:29,768 DEBUG {conn-10005} closed
+2019-10-19 14:05:06,034 DEBUG {conn-10001} connected
+2019-10-19 14:05:06,038 DEBUG {conn-10002} connected
+2019-10-19 14:05:06,039 DEBUG {conn-10003} connected
+2019-10-19 14:05:06,041 DEBUG {conn-10004} connected
+2019-10-19 14:05:06,042 DEBUG {conn-10005} connected
+2019-10-19 14:05:06,045 DEBUG {conn-10005} pool-connect
+2019-10-19 14:05:06,047 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:05:06,422 DEBUG {conn-10001} closed
+2019-10-19 14:05:06,422 DEBUG {conn-10002} closed
+2019-10-19 14:05:06,422 DEBUG {conn-10003} closed
+2019-10-19 14:05:06,422 DEBUG {conn-10004} closed
+2019-10-19 14:05:06,422 DEBUG {conn-10005} closed
+2019-10-19 14:05:47,948 DEBUG {conn-10001} connected
+2019-10-19 14:05:47,951 DEBUG {conn-10002} connected
+2019-10-19 14:05:47,953 DEBUG {conn-10003} connected
+2019-10-19 14:05:47,954 DEBUG {conn-10004} connected
+2019-10-19 14:05:47,956 DEBUG {conn-10005} connected
+2019-10-19 14:05:47,959 DEBUG {conn-10005} pool-connect
+2019-10-19 14:05:47,961 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:10:42,542 DEBUG {conn-10001} connected
+2019-10-19 14:10:42,545 DEBUG {conn-10002} connected
+2019-10-19 14:10:42,547 DEBUG {conn-10003} connected
+2019-10-19 14:10:42,548 DEBUG {conn-10004} connected
+2019-10-19 14:10:42,550 DEBUG {conn-10005} connected
+2019-10-19 14:10:42,553 DEBUG {conn-10005} pool-connect
+2019-10-19 14:10:42,555 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:10:42,970 DEBUG {conn-10001} closed
+2019-10-19 14:10:42,970 DEBUG {conn-10002} closed
+2019-10-19 14:10:42,970 DEBUG {conn-10003} closed
+2019-10-19 14:10:42,970 DEBUG {conn-10004} closed
+2019-10-19 14:10:42,970 DEBUG {conn-10005} closed
+2019-10-19 14:11:02,123 DEBUG {conn-10001} connected
+2019-10-19 14:11:02,126 DEBUG {conn-10002} connected
+2019-10-19 14:11:02,128 DEBUG {conn-10003} connected
+2019-10-19 14:11:02,129 DEBUG {conn-10004} connected
+2019-10-19 14:11:02,131 DEBUG {conn-10005} connected
+2019-10-19 14:11:02,134 DEBUG {conn-10005} pool-connect
+2019-10-19 14:11:02,135 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:11:02,504 DEBUG {conn-10001} closed
+2019-10-19 14:11:02,504 DEBUG {conn-10002} closed
+2019-10-19 14:11:02,504 DEBUG {conn-10003} closed
+2019-10-19 14:11:02,504 DEBUG {conn-10004} closed
+2019-10-19 14:11:02,504 DEBUG {conn-10005} closed
+2019-10-19 14:11:54,895 DEBUG {conn-10001} connected
+2019-10-19 14:11:54,898 DEBUG {conn-10002} connected
+2019-10-19 14:11:54,900 DEBUG {conn-10003} connected
+2019-10-19 14:11:54,901 DEBUG {conn-10004} connected
+2019-10-19 14:11:54,902 DEBUG {conn-10005} connected
+2019-10-19 14:11:54,905 DEBUG {conn-10005} pool-connect
+2019-10-19 14:11:54,907 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:11:55,272 DEBUG {conn-10001} closed
+2019-10-19 14:11:55,272 DEBUG {conn-10002} closed
+2019-10-19 14:11:55,272 DEBUG {conn-10003} closed
+2019-10-19 14:11:55,272 DEBUG {conn-10004} closed
+2019-10-19 14:11:55,272 DEBUG {conn-10005} closed
+2019-10-19 14:13:24,203 DEBUG {conn-10001} connected
+2019-10-19 14:13:24,206 DEBUG {conn-10002} connected
+2019-10-19 14:13:24,207 DEBUG {conn-10003} connected
+2019-10-19 14:13:24,209 DEBUG {conn-10004} connected
+2019-10-19 14:13:24,210 DEBUG {conn-10005} connected
+2019-10-19 14:13:24,213 DEBUG {conn-10005} pool-connect
+2019-10-19 14:13:24,215 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:19:39,800 DEBUG {conn-10001} connected
+2019-10-19 14:19:39,804 DEBUG {conn-10002} connected
+2019-10-19 14:19:39,805 DEBUG {conn-10003} connected
+2019-10-19 14:19:39,807 DEBUG {conn-10004} connected
+2019-10-19 14:19:39,808 DEBUG {conn-10005} connected
+2019-10-19 14:19:39,812 DEBUG {conn-10005} pool-connect
+2019-10-19 14:19:39,814 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:32:38,278 DEBUG {conn-10001} connected
+2019-10-19 14:32:38,281 DEBUG {conn-10002} connected
+2019-10-19 14:32:38,283 DEBUG {conn-10003} connected
+2019-10-19 14:32:38,284 DEBUG {conn-10004} connected
+2019-10-19 14:32:38,285 DEBUG {conn-10005} connected
+2019-10-19 14:32:38,288 DEBUG {conn-10005} pool-connect
+2019-10-19 14:32:38,290 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:34:01,097 DEBUG {conn-10001} connected
+2019-10-19 14:34:01,100 DEBUG {conn-10002} connected
+2019-10-19 14:34:01,102 DEBUG {conn-10003} connected
+2019-10-19 14:34:01,103 DEBUG {conn-10004} connected
+2019-10-19 14:34:01,105 DEBUG {conn-10005} connected
+2019-10-19 14:34:01,108 DEBUG {conn-10005} pool-connect
+2019-10-19 14:34:01,109 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:35:15,560 DEBUG {conn-10001} connected
+2019-10-19 14:35:15,564 DEBUG {conn-10002} connected
+2019-10-19 14:35:15,565 DEBUG {conn-10003} connected
+2019-10-19 14:35:15,567 DEBUG {conn-10004} connected
+2019-10-19 14:35:15,568 DEBUG {conn-10005} connected
+2019-10-19 14:35:15,571 DEBUG {conn-10005} pool-connect
+2019-10-19 14:35:15,573 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:37:30,749 DEBUG {conn-10001} connected
+2019-10-19 14:37:30,753 DEBUG {conn-10002} connected
+2019-10-19 14:37:30,754 DEBUG {conn-10003} connected
+2019-10-19 14:37:30,755 DEBUG {conn-10004} connected
+2019-10-19 14:37:30,757 DEBUG {conn-10005} connected
+2019-10-19 14:37:30,760 DEBUG {conn-10005} pool-connect
+2019-10-19 14:37:30,762 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:38:42,142 DEBUG {conn-10001} connected
+2019-10-19 14:38:42,145 DEBUG {conn-10002} connected
+2019-10-19 14:38:42,147 DEBUG {conn-10003} connected
+2019-10-19 14:38:42,148 DEBUG {conn-10004} connected
+2019-10-19 14:38:42,149 DEBUG {conn-10005} connected
+2019-10-19 14:38:42,152 DEBUG {conn-10005} pool-connect
+2019-10-19 14:38:42,154 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:39:34,566 DEBUG {conn-10001} connected
+2019-10-19 14:39:34,569 DEBUG {conn-10002} connected
+2019-10-19 14:39:34,571 DEBUG {conn-10003} connected
+2019-10-19 14:39:34,572 DEBUG {conn-10004} connected
+2019-10-19 14:39:34,574 DEBUG {conn-10005} connected
+2019-10-19 14:39:34,576 DEBUG {conn-10005} pool-connect
+2019-10-19 14:39:34,578 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:40:18,008 DEBUG {conn-10001} connected
+2019-10-19 14:40:18,012 DEBUG {conn-10002} connected
+2019-10-19 14:40:18,013 DEBUG {conn-10003} connected
+2019-10-19 14:40:18,014 DEBUG {conn-10004} connected
+2019-10-19 14:40:18,016 DEBUG {conn-10005} connected
+2019-10-19 14:40:18,019 DEBUG {conn-10005} pool-connect
+2019-10-19 14:40:18,020 DEBUG {conn-10005} pool-recycle
+2019-10-19 14:55:36,565 DEBUG {conn-10001} connected
+2019-10-19 14:55:36,568 DEBUG {conn-10002} connected
+2019-10-19 14:55:36,570 DEBUG {conn-10003} connected
+2019-10-19 14:55:36,571 DEBUG {conn-10004} connected
+2019-10-19 14:55:36,572 DEBUG {conn-10005} connected
+2019-10-19 14:55:36,575 DEBUG {conn-10005} pool-connect
+2019-10-19 14:55:36,577 DEBUG {conn-10005} pool-recycle
+2019-10-19 15:05:05,324 DEBUG {conn-10001} connected
+2019-10-19 15:05:05,327 DEBUG {conn-10002} connected
+2019-10-19 15:05:05,329 DEBUG {conn-10003} connected
+2019-10-19 15:05:05,330 DEBUG {conn-10004} connected
+2019-10-19 15:05:05,331 DEBUG {conn-10005} connected
+2019-10-19 15:05:05,334 DEBUG {conn-10005} pool-connect
+2019-10-19 15:05:05,336 DEBUG {conn-10005} pool-recycle
+2019-10-19 15:05:17,769 DEBUG {conn-10001} connected
+2019-10-19 15:05:17,773 DEBUG {conn-10002} connected
+2019-10-19 15:05:17,777 DEBUG {conn-10003} connected
+2019-10-19 15:05:17,779 DEBUG {conn-10004} connected
+2019-10-19 15:05:17,781 DEBUG {conn-10005} connected
+2019-10-19 15:05:17,784 DEBUG {conn-10005} pool-connect
+2019-10-19 15:05:17,786 DEBUG {conn-10005} pool-recycle
+2019-10-19 15:58:11,923 DEBUG {conn-10005} pool-connect
+2019-10-19 15:58:11,925 DEBUG {conn-10004} pool-connect
+2019-10-19 15:58:12,009 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name  FROM t_type
+2019-10-19 15:58:12,009 DEBUG {conn-10004, pstmt-20001} created. SELECT COUNT(1) FROM t_images
+2019-10-19 15:58:12,014 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 15:58:12,014 DEBUG {conn-10004, pstmt-20001} Parameters : []
+2019-10-19 15:58:12,014 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 15:58:12,014 DEBUG {conn-10004, pstmt-20001} Types : []
+2019-10-19 15:58:12,025 DEBUG {conn-10005, pstmt-20000} executed. 14.222659 millis. SELECT  id,name  FROM t_type
+2019-10-19 15:58:12,028 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-19 15:58:12,028 DEBUG {conn-10004, pstmt-20001, rs-50001} query executed. 16.877783 millis. SELECT COUNT(1) FROM t_images
+2019-10-19 15:58:12,028 DEBUG {conn-10004, pstmt-20001, rs-50001} open
+2019-10-19 15:58:12,029 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name]
+2019-10-19 15:58:12,029 DEBUG {conn-10004, pstmt-20001, rs-50001} Header: [COUNT(1)]
+2019-10-19 15:58:12,031 DEBUG {conn-10004, pstmt-20001, rs-50001} Result: [19]
+2019-10-19 15:58:12,031 DEBUG {conn-10004, pstmt-20001, rs-50001} closed
+2019-10-19 15:58:12,031 DEBUG {conn-10004, pstmt-20001} clearParameters. 
+2019-10-19 15:58:12,032 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, 首页]
+2019-10-19 15:58:12,033 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, 壁纸]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, 情侣头像]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, 女生头像]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, 男生头像]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, 闺蜜头像]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [7, 潮图]
+2019-10-19 15:58:12,034 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-19 15:58:12,035 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 15:58:12,035 DEBUG {conn-10005} pool-recycle
+2019-10-19 15:58:12,036 DEBUG {conn-10004, pstmt-20002} created. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002} Parameters : [0, 5]
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002} Types : [BIGINT, BIGINT]
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002} executed. 0.621095 millis. SELECT  id,name,url  FROM t_images LIMIT ?,?
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002, rs-50002} open
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002, rs-50002} Header: [id, name, url]
+2019-10-19 15:58:12,037 DEBUG {conn-10004, pstmt-20002, rs-50002} Result: [1, 123, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_1.jpg]
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002, rs-50002} Result: [2, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_11.jpg]
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002, rs-50002} Result: [3, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_15.jpg]
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002, rs-50002} Result: [4, null, NzAwODE0ODlfMTgwMzA3MzQyNzJfMTU2OTg5OTg0ODc5OA==_5.jpg]
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002, rs-50002} Result: [5, null, image.jpg]
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002, rs-50002} closed
+2019-10-19 15:58:12,038 DEBUG {conn-10004, pstmt-20002} clearParameters. 
+2019-10-19 15:58:12,038 DEBUG {conn-10004} pool-recycle
+2019-10-19 16:00:23,661 DEBUG {conn-10001} connected
+2019-10-19 16:00:23,664 DEBUG {conn-10002} connected
+2019-10-19 16:00:23,666 DEBUG {conn-10003} connected
+2019-10-19 16:00:23,667 DEBUG {conn-10004} connected
+2019-10-19 16:00:23,669 DEBUG {conn-10005} connected
+2019-10-19 16:00:23,672 DEBUG {conn-10005} pool-connect
+2019-10-19 16:00:23,673 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:02:02,694 DEBUG {conn-10001} connected
+2019-10-19 16:02:02,697 DEBUG {conn-10002} connected
+2019-10-19 16:02:02,699 DEBUG {conn-10003} connected
+2019-10-19 16:02:02,700 DEBUG {conn-10004} connected
+2019-10-19 16:02:02,702 DEBUG {conn-10005} connected
+2019-10-19 16:02:02,705 DEBUG {conn-10005} pool-connect
+2019-10-19 16:02:02,707 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:02:34,922 DEBUG {conn-10001} connected
+2019-10-19 16:02:34,925 DEBUG {conn-10002} connected
+2019-10-19 16:02:34,926 DEBUG {conn-10003} connected
+2019-10-19 16:02:34,928 DEBUG {conn-10004} connected
+2019-10-19 16:02:34,930 DEBUG {conn-10005} connected
+2019-10-19 16:02:34,933 DEBUG {conn-10005} pool-connect
+2019-10-19 16:02:34,935 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:03:02,316 DEBUG {conn-10001} connected
+2019-10-19 16:03:02,319 DEBUG {conn-10002} connected
+2019-10-19 16:03:02,321 DEBUG {conn-10003} connected
+2019-10-19 16:03:02,322 DEBUG {conn-10004} connected
+2019-10-19 16:03:02,323 DEBUG {conn-10005} connected
+2019-10-19 16:03:02,327 DEBUG {conn-10005} pool-connect
+2019-10-19 16:03:02,328 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:03:18,327 DEBUG {conn-10001} connected
+2019-10-19 16:03:18,330 DEBUG {conn-10002} connected
+2019-10-19 16:03:18,332 DEBUG {conn-10003} connected
+2019-10-19 16:03:18,333 DEBUG {conn-10004} connected
+2019-10-19 16:03:18,334 DEBUG {conn-10005} connected
+2019-10-19 16:03:18,337 DEBUG {conn-10005} pool-connect
+2019-10-19 16:03:18,339 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:04:47,298 DEBUG {conn-10005} pool-connect
+2019-10-19 16:04:47,376 DEBUG {conn-10005, pstmt-20000} created. SELECT  id,name  FROM t_type
+2019-10-19 16:04:47,381 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:04:47,381 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:04:47,388 DEBUG {conn-10005, pstmt-20000} executed. 9.829278 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:04:47,391 DEBUG {conn-10005, pstmt-20000, rs-50000} open
+2019-10-19 16:04:47,393 DEBUG {conn-10005, pstmt-20000, rs-50000} Header: [id, name]
+2019-10-19 16:04:47,396 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [1, 首页]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [2, 壁纸]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [3, 情侣头像]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [4, 女生头像]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [5, 男生头像]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [6, 闺蜜头像]
+2019-10-19 16:04:47,398 DEBUG {conn-10005, pstmt-20000, rs-50000} Result: [7, 潮图]
+2019-10-19 16:04:47,399 DEBUG {conn-10005, pstmt-20000, rs-50000} closed
+2019-10-19 16:04:47,399 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:04:47,400 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:05:02,347 DEBUG {conn-10005} pool-connect
+2019-10-19 16:05:02,347 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:05:02,348 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:05:02,348 DEBUG {conn-10005, pstmt-20000} executed. 0.627626 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:05:02,348 DEBUG {conn-10005, pstmt-20000, rs-50001} open
+2019-10-19 16:05:02,348 DEBUG {conn-10005, pstmt-20000, rs-50001} Header: [id, name]
+2019-10-19 16:05:02,348 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [1, 首页]
+2019-10-19 16:05:02,349 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [2, 壁纸]
+2019-10-19 16:05:02,349 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [3, 情侣头像]
+2019-10-19 16:05:02,349 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [4, 女生头像]
+2019-10-19 16:05:02,350 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [5, 男生头像]
+2019-10-19 16:05:02,350 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [6, 闺蜜头像]
+2019-10-19 16:05:02,350 DEBUG {conn-10005, pstmt-20000, rs-50001} Result: [7, 潮图]
+2019-10-19 16:05:02,350 DEBUG {conn-10005, pstmt-20000, rs-50001} closed
+2019-10-19 16:05:02,350 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:05:02,350 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:06:16,950 DEBUG {conn-10005} pool-connect
+2019-10-19 16:06:16,951 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:06:16,951 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:06:16,952 DEBUG {conn-10005, pstmt-20000} executed. 1.410758 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:06:16,953 DEBUG {conn-10005, pstmt-20000, rs-50002} open
+2019-10-19 16:06:16,953 DEBUG {conn-10005, pstmt-20000, rs-50002} Header: [id, name]
+2019-10-19 16:06:16,953 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [1, 首页]
+2019-10-19 16:06:16,953 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [2, 壁纸]
+2019-10-19 16:06:16,954 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [3, 情侣头像]
+2019-10-19 16:06:16,954 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [4, 女生头像]
+2019-10-19 16:06:16,954 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [5, 男生头像]
+2019-10-19 16:06:16,954 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [6, 闺蜜头像]
+2019-10-19 16:06:16,955 DEBUG {conn-10005, pstmt-20000, rs-50002} Result: [7, 潮图]
+2019-10-19 16:06:16,955 DEBUG {conn-10005, pstmt-20000, rs-50002} closed
+2019-10-19 16:06:16,955 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:06:16,955 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:11:42,722 DEBUG {conn-10005} pool-connect
+2019-10-19 16:11:42,723 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:11:42,723 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000} executed. 0.872704 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} open
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Header: [id, name]
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [1, 首页]
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [2, 壁纸]
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [3, 情侣头像]
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [4, 女生头像]
+2019-10-19 16:11:42,724 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [5, 男生头像]
+2019-10-19 16:11:42,725 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [6, 闺蜜头像]
+2019-10-19 16:11:42,725 DEBUG {conn-10005, pstmt-20000, rs-50003} Result: [7, 潮图]
+2019-10-19 16:11:42,725 DEBUG {conn-10005, pstmt-20000, rs-50003} closed
+2019-10-19 16:11:42,725 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:11:42,725 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:11:48,762 DEBUG {conn-10005} pool-connect
+2019-10-19 16:11:48,763 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:11:48,763 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:11:48,764 DEBUG {conn-10005, pstmt-20000} executed. 0.810502 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:11:48,764 DEBUG {conn-10005, pstmt-20000, rs-50004} open
+2019-10-19 16:11:48,764 DEBUG {conn-10005, pstmt-20000, rs-50004} Header: [id, name]
+2019-10-19 16:11:48,765 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [1, 首页]
+2019-10-19 16:11:48,766 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [2, 壁纸]
+2019-10-19 16:11:48,766 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [3, 情侣头像]
+2019-10-19 16:11:48,766 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [4, 女生头像]
+2019-10-19 16:11:48,767 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [5, 男生头像]
+2019-10-19 16:11:48,768 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [6, 闺蜜头像]
+2019-10-19 16:11:48,768 DEBUG {conn-10005, pstmt-20000, rs-50004} Result: [7, 潮图]
+2019-10-19 16:11:48,768 DEBUG {conn-10005, pstmt-20000, rs-50004} closed
+2019-10-19 16:11:48,769 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:11:48,769 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:15:42,490 DEBUG {conn-10005} pool-connect
+2019-10-19 16:15:42,490 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:15:42,490 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:15:42,491 DEBUG {conn-10005, pstmt-20000} executed. 0.951391 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:15:42,491 DEBUG {conn-10005, pstmt-20000, rs-50005} open
+2019-10-19 16:15:42,491 DEBUG {conn-10005, pstmt-20000, rs-50005} Header: [id, name]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [1, 首页]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [2, 壁纸]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [3, 情侣头像]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [4, 女生头像]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [5, 男生头像]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [6, 闺蜜头像]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} Result: [7, 潮图]
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000, rs-50005} closed
+2019-10-19 16:15:42,492 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:15:42,493 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:15:50,871 DEBUG {conn-10005} pool-connect
+2019-10-19 16:15:50,871 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:15:50,871 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000} executed. 0.407428 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} open
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Header: [id, name]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [1, 首页]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [2, 壁纸]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [3, 情侣头像]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [4, 女生头像]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [5, 男生头像]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [6, 闺蜜头像]
+2019-10-19 16:15:50,872 DEBUG {conn-10005, pstmt-20000, rs-50006} Result: [7, 潮图]
+2019-10-19 16:15:50,873 DEBUG {conn-10005, pstmt-20000, rs-50006} closed
+2019-10-19 16:15:50,873 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:15:50,873 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:15:53,432 DEBUG {conn-10005} pool-connect
+2019-10-19 16:15:53,432 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:15:53,432 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000} executed. 0.399652 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} open
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Header: [id, name]
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [1, 首页]
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [2, 壁纸]
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [3, 情侣头像]
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [4, 女生头像]
+2019-10-19 16:15:53,433 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [5, 男生头像]
+2019-10-19 16:15:53,434 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [6, 闺蜜头像]
+2019-10-19 16:15:53,434 DEBUG {conn-10005, pstmt-20000, rs-50007} Result: [7, 潮图]
+2019-10-19 16:15:53,434 DEBUG {conn-10005, pstmt-20000, rs-50007} closed
+2019-10-19 16:15:53,434 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:15:53,434 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:15:55,386 DEBUG {conn-10005} pool-connect
+2019-10-19 16:15:55,386 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:15:55,386 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000} executed. 0.457812 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} open
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} Header: [id, name]
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [1, 首页]
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [2, 壁纸]
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [3, 情侣头像]
+2019-10-19 16:15:55,387 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [4, 女生头像]
+2019-10-19 16:15:55,388 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [5, 男生头像]
+2019-10-19 16:15:55,388 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [6, 闺蜜头像]
+2019-10-19 16:15:55,388 DEBUG {conn-10005, pstmt-20000, rs-50008} Result: [7, 潮图]
+2019-10-19 16:15:55,388 DEBUG {conn-10005, pstmt-20000, rs-50008} closed
+2019-10-19 16:15:55,388 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:15:55,388 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:15:57,797 DEBUG {conn-10005} pool-connect
+2019-10-19 16:15:57,797 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:15:57,797 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000} executed. 0.429821 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} open
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Header: [id, name]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [1, 首页]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [2, 壁纸]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [3, 情侣头像]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [4, 女生头像]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [5, 男生头像]
+2019-10-19 16:15:57,798 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [6, 闺蜜头像]
+2019-10-19 16:15:57,799 DEBUG {conn-10005, pstmt-20000, rs-50009} Result: [7, 潮图]
+2019-10-19 16:15:57,799 DEBUG {conn-10005, pstmt-20000, rs-50009} closed
+2019-10-19 16:15:57,799 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:15:57,799 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:16:08,698 DEBUG {conn-10005} pool-connect
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000} executed. 0.468697 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000, rs-50010} open
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000, rs-50010} Header: [id, name]
+2019-10-19 16:16:08,699 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [1, 首页]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [2, 壁纸]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [3, 情侣头像]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [4, 女生头像]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [5, 男生头像]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [6, 闺蜜头像]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} Result: [7, 潮图]
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000, rs-50010} closed
+2019-10-19 16:16:08,700 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:16:08,700 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:17:07,367 DEBUG {conn-10005} pool-connect
+2019-10-19 16:17:07,368 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:17:07,368 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:17:07,368 DEBUG {conn-10005, pstmt-20000} executed. 0.430132 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} open
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Header: [id, name]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [1, 首页]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [2, 壁纸]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [3, 情侣头像]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [4, 女生头像]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [5, 男生头像]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [6, 闺蜜头像]
+2019-10-19 16:17:07,369 DEBUG {conn-10005, pstmt-20000, rs-50011} Result: [7, 潮图]
+2019-10-19 16:17:07,370 DEBUG {conn-10005, pstmt-20000, rs-50011} closed
+2019-10-19 16:17:07,370 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:17:07,370 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:17:09,089 DEBUG {conn-10005} pool-connect
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000} executed. 0.405873 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000, rs-50012} open
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000, rs-50012} Header: [id, name]
+2019-10-19 16:17:09,090 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [1, 首页]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [2, 壁纸]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [3, 情侣头像]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [4, 女生头像]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [5, 男生头像]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [6, 闺蜜头像]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} Result: [7, 潮图]
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000, rs-50012} closed
+2019-10-19 16:17:09,091 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:17:09,091 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:17:10,655 DEBUG {conn-10005} pool-connect
+2019-10-19 16:17:10,655 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:17:10,655 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000} executed. 0.391255 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000, rs-50013} open
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000, rs-50013} Header: [id, name]
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [1, 首页]
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [2, 壁纸]
+2019-10-19 16:17:10,656 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [3, 情侣头像]
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [4, 女生头像]
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [5, 男生头像]
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [6, 闺蜜头像]
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000, rs-50013} Result: [7, 潮图]
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000, rs-50013} closed
+2019-10-19 16:17:10,657 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:17:10,657 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:17:24,613 DEBUG {conn-10005} pool-connect
+2019-10-19 16:17:24,614 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:17:24,614 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:17:24,614 DEBUG {conn-10005, pstmt-20000} executed. 0.32812 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:17:24,614 DEBUG {conn-10005, pstmt-20000, rs-50014} open
+2019-10-19 16:17:24,614 DEBUG {conn-10005, pstmt-20000, rs-50014} Header: [id, name]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [1, 首页]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [2, 壁纸]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [3, 情侣头像]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [4, 女生头像]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [5, 男生头像]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [6, 闺蜜头像]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} Result: [7, 潮图]
+2019-10-19 16:17:24,615 DEBUG {conn-10005, pstmt-20000, rs-50014} closed
+2019-10-19 16:17:24,616 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:17:24,616 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:17:56,564 DEBUG {conn-10005} pool-connect
+2019-10-19 16:17:56,566 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:17:56,566 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:17:56,566 DEBUG {conn-10005, pstmt-20000} executed. 0.789663 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} open
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Header: [id, name]
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [1, 首页]
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [2, 壁纸]
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [3, 情侣头像]
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [4, 女生头像]
+2019-10-19 16:17:56,567 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [5, 男生头像]
+2019-10-19 16:17:56,568 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [6, 闺蜜头像]
+2019-10-19 16:17:56,568 DEBUG {conn-10005, pstmt-20000, rs-50015} Result: [7, 潮图]
+2019-10-19 16:17:56,568 DEBUG {conn-10005, pstmt-20000, rs-50015} closed
+2019-10-19 16:17:56,568 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:17:56,568 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:18:22,603 DEBUG {conn-10005} pool-connect
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000} executed. 0.443817 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000, rs-50016} open
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000, rs-50016} Header: [id, name]
+2019-10-19 16:18:22,604 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [1, 首页]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [2, 壁纸]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [3, 情侣头像]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [4, 女生头像]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [5, 男生头像]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [6, 闺蜜头像]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} Result: [7, 潮图]
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000, rs-50016} closed
+2019-10-19 16:18:22,605 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:18:22,605 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:18:24,727 DEBUG {conn-10005} pool-connect
+2019-10-19 16:18:24,727 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:18:24,727 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:18:24,727 DEBUG {conn-10005, pstmt-20000} executed. 0.376637 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} open
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Header: [id, name]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [1, 首页]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [2, 壁纸]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [3, 情侣头像]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [4, 女生头像]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [5, 男生头像]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [6, 闺蜜头像]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} Result: [7, 潮图]
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000, rs-50017} closed
+2019-10-19 16:18:24,728 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:18:24,728 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:18:45,053 DEBUG {conn-10005} pool-connect
+2019-10-19 16:18:45,053 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:18:45,053 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000} executed. 0.514728 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} open
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Header: [id, name]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [1, 首页]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [2, 壁纸]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [3, 情侣头像]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [4, 女生头像]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [5, 男生头像]
+2019-10-19 16:18:45,054 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [6, 闺蜜头像]
+2019-10-19 16:18:45,055 DEBUG {conn-10005, pstmt-20000, rs-50018} Result: [7, 潮图]
+2019-10-19 16:18:45,055 DEBUG {conn-10005, pstmt-20000, rs-50018} closed
+2019-10-19 16:18:45,055 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:18:45,055 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:18:46,052 DEBUG {conn-10005} pool-connect
+2019-10-19 16:18:46,052 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:18:46,052 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:18:46,055 DEBUG {conn-10005, pstmt-20000} executed. 2.442079 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:18:46,055 DEBUG {conn-10005, pstmt-20000, rs-50019} open
+2019-10-19 16:18:46,055 DEBUG {conn-10005, pstmt-20000, rs-50019} Header: [id, name]
+2019-10-19 16:18:46,055 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [1, 首页]
+2019-10-19 16:18:46,055 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [2, 壁纸]
+2019-10-19 16:18:46,056 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [3, 情侣头像]
+2019-10-19 16:18:46,056 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [4, 女生头像]
+2019-10-19 16:18:46,056 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [5, 男生头像]
+2019-10-19 16:18:46,056 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [6, 闺蜜头像]
+2019-10-19 16:18:46,057 DEBUG {conn-10005, pstmt-20000, rs-50019} Result: [7, 潮图]
+2019-10-19 16:18:46,057 DEBUG {conn-10005, pstmt-20000, rs-50019} closed
+2019-10-19 16:18:46,057 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:18:46,057 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:18:57,466 DEBUG {conn-10005} pool-connect
+2019-10-19 16:18:57,467 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:18:57,467 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000} executed. 0.733993 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} open
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} Header: [id, name]
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [1, 首页]
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [2, 壁纸]
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [3, 情侣头像]
+2019-10-19 16:18:57,468 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [4, 女生头像]
+2019-10-19 16:18:57,469 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [5, 男生头像]
+2019-10-19 16:18:57,469 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [6, 闺蜜头像]
+2019-10-19 16:18:57,469 DEBUG {conn-10005, pstmt-20000, rs-50020} Result: [7, 潮图]
+2019-10-19 16:18:57,469 DEBUG {conn-10005, pstmt-20000, rs-50020} closed
+2019-10-19 16:18:57,469 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:18:57,469 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:19:13,725 DEBUG {conn-10005} pool-connect
+2019-10-19 16:19:13,725 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:19:13,725 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000} executed. 0.386901 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} open
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Header: [id, name]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [1, 首页]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [2, 壁纸]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [3, 情侣头像]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [4, 女生头像]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [5, 男生头像]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [6, 闺蜜头像]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} Result: [7, 潮图]
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000, rs-50021} closed
+2019-10-19 16:19:13,726 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:19:13,727 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:19:15,522 DEBUG {conn-10005} pool-connect
+2019-10-19 16:19:15,522 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:19:15,522 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000} executed. 0.396854 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} open
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Header: [id, name]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [1, 首页]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [2, 壁纸]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [3, 情侣头像]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [4, 女生头像]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [5, 男生头像]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [6, 闺蜜头像]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} Result: [7, 潮图]
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000, rs-50022} closed
+2019-10-19 16:19:15,523 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:19:15,524 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:19:17,079 DEBUG {conn-10005} pool-connect
+2019-10-19 16:19:17,079 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:19:17,079 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000} executed. 0.383791 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} open
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Header: [id, name]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [1, 首页]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [2, 壁纸]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [3, 情侣头像]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [4, 女生头像]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [5, 男生头像]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [6, 闺蜜头像]
+2019-10-19 16:19:17,080 DEBUG {conn-10005, pstmt-20000, rs-50023} Result: [7, 潮图]
+2019-10-19 16:19:17,081 DEBUG {conn-10005, pstmt-20000, rs-50023} closed
+2019-10-19 16:19:17,081 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:19:17,081 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:19:23,435 DEBUG {conn-10005} pool-connect
+2019-10-19 16:19:23,435 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:19:23,435 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000} executed. 0.501976 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} open
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Header: [id, name]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [1, 首页]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [2, 壁纸]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [3, 情侣头像]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [4, 女生头像]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [5, 男生头像]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [6, 闺蜜头像]
+2019-10-19 16:19:23,436 DEBUG {conn-10005, pstmt-20000, rs-50024} Result: [7, 潮图]
+2019-10-19 16:19:23,437 DEBUG {conn-10005, pstmt-20000, rs-50024} closed
+2019-10-19 16:19:23,437 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:19:23,437 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:29:44,630 DEBUG {conn-10005} pool-connect
+2019-10-19 16:29:44,630 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:29:44,630 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000} executed. 0.492334 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} open
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Header: [id, name]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [1, 首页]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [2, 壁纸]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [3, 情侣头像]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [4, 女生头像]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [5, 男生头像]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [6, 闺蜜头像]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} Result: [7, 潮图]
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000, rs-50025} closed
+2019-10-19 16:29:44,631 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:29:44,632 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:29:50,599 DEBUG {conn-10005} pool-connect
+2019-10-19 16:29:50,599 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:29:50,599 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000} executed. 0.360464 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} open
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Header: [id, name]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [1, 首页]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [2, 壁纸]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [3, 情侣头像]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [4, 女生头像]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [5, 男生头像]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [6, 闺蜜头像]
+2019-10-19 16:29:50,600 DEBUG {conn-10005, pstmt-20000, rs-50026} Result: [7, 潮图]
+2019-10-19 16:29:50,601 DEBUG {conn-10005, pstmt-20000, rs-50026} closed
+2019-10-19 16:29:50,601 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:29:50,601 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:29:51,781 DEBUG {conn-10005} pool-connect
+2019-10-19 16:29:51,781 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:29:51,781 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000} executed. 0.385968 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} open
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Header: [id, name]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [1, 首页]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [2, 壁纸]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [3, 情侣头像]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [4, 女生头像]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [5, 男生头像]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [6, 闺蜜头像]
+2019-10-19 16:29:51,782 DEBUG {conn-10005, pstmt-20000, rs-50027} Result: [7, 潮图]
+2019-10-19 16:29:51,783 DEBUG {conn-10005, pstmt-20000, rs-50027} closed
+2019-10-19 16:29:51,783 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:29:51,783 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:29:59,622 DEBUG {conn-10005} pool-connect
+2019-10-19 16:29:59,622 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:29:59,622 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000} executed. 0.502598 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} open
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Header: [id, name]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [1, 首页]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [2, 壁纸]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [3, 情侣头像]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [4, 女生头像]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [5, 男生头像]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [6, 闺蜜头像]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} Result: [7, 潮图]
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000, rs-50028} closed
+2019-10-19 16:29:59,623 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:29:59,624 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:30:03,141 DEBUG {conn-10005} pool-connect
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000} Parameters : []
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000} Types : []
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000} executed. 0.367307 millis. SELECT  id,name  FROM t_type
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} open
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Header: [id, name]
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [1, 首页]
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [2, 壁纸]
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [3, 情侣头像]
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [4, 女生头像]
+2019-10-19 16:30:03,142 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [5, 男生头像]
+2019-10-19 16:30:03,143 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [6, 闺蜜头像]
+2019-10-19 16:30:03,143 DEBUG {conn-10005, pstmt-20000, rs-50029} Result: [7, 潮图]
+2019-10-19 16:30:03,143 DEBUG {conn-10005, pstmt-20000, rs-50029} closed
+2019-10-19 16:30:03,143 DEBUG {conn-10005, pstmt-20000} clearParameters. 
+2019-10-19 16:30:03,143 DEBUG {conn-10005} pool-recycle
+2019-10-19 16:31:55,061 DEBUG {conn-10001} connected
+2019-10-19 16:31:55,064 DEBUG {conn-10002} connected
+2019-10-19 16:31:55,066 DEBUG {conn-10003} connected
+2019-10-19 16:31:55,067 DEBUG {conn-10004} connected
+2019-10-19 16:31:55,068 DEBUG {conn-10005} connected
+2019-10-19 16:31:55,071 DEBUG {conn-10005} pool-connect
+2019-10-19 16:31:55,073 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:02:14,675 DEBUG {conn-10001} connected
+2019-10-19 18:02:14,678 DEBUG {conn-10002} connected
+2019-10-19 18:02:14,680 DEBUG {conn-10003} connected
+2019-10-19 18:02:14,681 DEBUG {conn-10004} connected
+2019-10-19 18:02:14,683 DEBUG {conn-10005} connected
+2019-10-19 18:02:14,686 DEBUG {conn-10005} pool-connect
+2019-10-19 18:02:14,688 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:02:14,833 DEBUG {conn-10001} closed
+2019-10-19 18:02:14,833 DEBUG {conn-10002} closed
+2019-10-19 18:02:14,833 DEBUG {conn-10003} closed
+2019-10-19 18:02:14,833 DEBUG {conn-10004} closed
+2019-10-19 18:02:14,834 DEBUG {conn-10005} closed
+2019-10-19 18:03:20,511 DEBUG {conn-10001} connected
+2019-10-19 18:03:20,515 DEBUG {conn-10002} connected
+2019-10-19 18:03:20,516 DEBUG {conn-10003} connected
+2019-10-19 18:03:20,518 DEBUG {conn-10004} connected
+2019-10-19 18:03:20,520 DEBUG {conn-10005} connected
+2019-10-19 18:03:20,523 DEBUG {conn-10005} pool-connect
+2019-10-19 18:03:20,525 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:03:20,646 DEBUG {conn-10001} closed
+2019-10-19 18:03:20,646 DEBUG {conn-10002} closed
+2019-10-19 18:03:20,646 DEBUG {conn-10003} closed
+2019-10-19 18:03:20,647 DEBUG {conn-10004} closed
+2019-10-19 18:03:20,647 DEBUG {conn-10005} closed
+2019-10-19 18:04:02,850 DEBUG {conn-10001} connected
+2019-10-19 18:04:02,853 DEBUG {conn-10002} connected
+2019-10-19 18:04:02,855 DEBUG {conn-10003} connected
+2019-10-19 18:04:02,856 DEBUG {conn-10004} connected
+2019-10-19 18:04:02,858 DEBUG {conn-10005} connected
+2019-10-19 18:04:02,861 DEBUG {conn-10005} pool-connect
+2019-10-19 18:04:02,863 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:04:02,964 DEBUG {conn-10001} closed
+2019-10-19 18:04:02,965 DEBUG {conn-10002} closed
+2019-10-19 18:04:02,965 DEBUG {conn-10003} closed
+2019-10-19 18:04:02,965 DEBUG {conn-10004} closed
+2019-10-19 18:04:02,965 DEBUG {conn-10005} closed
+2019-10-19 18:04:32,522 DEBUG {conn-10001} connected
+2019-10-19 18:04:32,525 DEBUG {conn-10002} connected
+2019-10-19 18:04:32,526 DEBUG {conn-10003} connected
+2019-10-19 18:04:32,528 DEBUG {conn-10004} connected
+2019-10-19 18:04:32,529 DEBUG {conn-10005} connected
+2019-10-19 18:04:32,532 DEBUG {conn-10005} pool-connect
+2019-10-19 18:04:32,534 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:04:32,661 DEBUG {conn-10001} closed
+2019-10-19 18:04:32,661 DEBUG {conn-10002} closed
+2019-10-19 18:04:32,661 DEBUG {conn-10003} closed
+2019-10-19 18:04:32,661 DEBUG {conn-10004} closed
+2019-10-19 18:04:32,661 DEBUG {conn-10005} closed
+2019-10-19 18:06:53,817 DEBUG {conn-10001} connected
+2019-10-19 18:06:53,821 DEBUG {conn-10002} connected
+2019-10-19 18:06:53,823 DEBUG {conn-10003} connected
+2019-10-19 18:06:53,824 DEBUG {conn-10004} connected
+2019-10-19 18:06:53,826 DEBUG {conn-10005} connected
+2019-10-19 18:06:53,830 DEBUG {conn-10005} pool-connect
+2019-10-19 18:06:53,832 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:06:53,968 DEBUG {conn-10001} closed
+2019-10-19 18:06:53,969 DEBUG {conn-10002} closed
+2019-10-19 18:06:53,969 DEBUG {conn-10003} closed
+2019-10-19 18:06:53,969 DEBUG {conn-10004} closed
+2019-10-19 18:06:53,969 DEBUG {conn-10005} closed
+2019-10-19 18:09:42,360 DEBUG {conn-10001} connected
+2019-10-19 18:09:42,364 DEBUG {conn-10002} connected
+2019-10-19 18:09:42,366 DEBUG {conn-10003} connected
+2019-10-19 18:09:42,367 DEBUG {conn-10004} connected
+2019-10-19 18:09:42,369 DEBUG {conn-10005} connected
+2019-10-19 18:09:42,372 DEBUG {conn-10005} pool-connect
+2019-10-19 18:09:42,374 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:09:42,507 DEBUG {conn-10001} closed
+2019-10-19 18:09:42,507 DEBUG {conn-10002} closed
+2019-10-19 18:09:42,508 DEBUG {conn-10003} closed
+2019-10-19 18:09:42,508 DEBUG {conn-10004} closed
+2019-10-19 18:09:42,508 DEBUG {conn-10005} closed
+2019-10-19 18:10:56,472 DEBUG {conn-10001} connected
+2019-10-19 18:10:56,476 DEBUG {conn-10002} connected
+2019-10-19 18:10:56,477 DEBUG {conn-10003} connected
+2019-10-19 18:10:56,479 DEBUG {conn-10004} connected
+2019-10-19 18:10:56,480 DEBUG {conn-10005} connected
+2019-10-19 18:10:56,483 DEBUG {conn-10005} pool-connect
+2019-10-19 18:10:56,485 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:10:56,539 DEBUG {conn-10001} closed
+2019-10-19 18:10:56,539 DEBUG {conn-10002} closed
+2019-10-19 18:10:56,539 DEBUG {conn-10003} closed
+2019-10-19 18:10:56,540 DEBUG {conn-10004} closed
+2019-10-19 18:10:56,540 DEBUG {conn-10005} closed
+2019-10-19 18:11:40,159 DEBUG {conn-10001} connected
+2019-10-19 18:11:40,162 DEBUG {conn-10002} connected
+2019-10-19 18:11:40,164 DEBUG {conn-10003} connected
+2019-10-19 18:11:40,165 DEBUG {conn-10004} connected
+2019-10-19 18:11:40,166 DEBUG {conn-10005} connected
+2019-10-19 18:11:40,169 DEBUG {conn-10005} pool-connect
+2019-10-19 18:11:40,171 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:11:40,271 DEBUG {conn-10001} closed
+2019-10-19 18:11:40,271 DEBUG {conn-10002} closed
+2019-10-19 18:11:40,271 DEBUG {conn-10003} closed
+2019-10-19 18:11:40,271 DEBUG {conn-10004} closed
+2019-10-19 18:11:40,271 DEBUG {conn-10005} closed
+2019-10-19 18:14:08,696 DEBUG {conn-10001} connected
+2019-10-19 18:14:08,699 DEBUG {conn-10002} connected
+2019-10-19 18:14:08,701 DEBUG {conn-10003} connected
+2019-10-19 18:14:08,702 DEBUG {conn-10004} connected
+2019-10-19 18:14:08,703 DEBUG {conn-10005} connected
+2019-10-19 18:14:08,795 DEBUG {conn-10005} pool-connect
+2019-10-19 18:14:08,797 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:14:08,900 DEBUG {conn-10001} closed
+2019-10-19 18:14:08,900 DEBUG {conn-10002} closed
+2019-10-19 18:14:08,900 DEBUG {conn-10003} closed
+2019-10-19 18:14:08,900 DEBUG {conn-10004} closed
+2019-10-19 18:14:08,900 DEBUG {conn-10005} closed
+2019-10-19 18:14:55,429 DEBUG {conn-10001} connected
+2019-10-19 18:14:55,432 DEBUG {conn-10002} connected
+2019-10-19 18:14:55,434 DEBUG {conn-10003} connected
+2019-10-19 18:14:55,435 DEBUG {conn-10004} connected
+2019-10-19 18:14:55,437 DEBUG {conn-10005} connected
+2019-10-19 18:14:55,439 DEBUG {conn-10005} pool-connect
+2019-10-19 18:14:55,441 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:14:55,547 DEBUG {conn-10001} closed
+2019-10-19 18:14:55,547 DEBUG {conn-10002} closed
+2019-10-19 18:14:55,547 DEBUG {conn-10003} closed
+2019-10-19 18:14:55,547 DEBUG {conn-10004} closed
+2019-10-19 18:14:55,547 DEBUG {conn-10005} closed
+2019-10-19 18:18:07,119 DEBUG {conn-10001} connected
+2019-10-19 18:18:07,122 DEBUG {conn-10002} connected
+2019-10-19 18:18:07,124 DEBUG {conn-10003} connected
+2019-10-19 18:18:07,125 DEBUG {conn-10004} connected
+2019-10-19 18:18:07,127 DEBUG {conn-10005} connected
+2019-10-19 18:18:07,130 DEBUG {conn-10005} pool-connect
+2019-10-19 18:18:07,132 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:18:07,233 DEBUG {conn-10001} closed
+2019-10-19 18:18:07,233 DEBUG {conn-10002} closed
+2019-10-19 18:18:07,233 DEBUG {conn-10003} closed
+2019-10-19 18:18:07,233 DEBUG {conn-10004} closed
+2019-10-19 18:18:07,234 DEBUG {conn-10005} closed
+2019-10-19 18:19:48,863 DEBUG {conn-10001} connected
+2019-10-19 18:19:48,866 DEBUG {conn-10002} connected
+2019-10-19 18:19:48,868 DEBUG {conn-10003} connected
+2019-10-19 18:19:48,870 DEBUG {conn-10004} connected
+2019-10-19 18:19:48,871 DEBUG {conn-10005} connected
+2019-10-19 18:19:48,874 DEBUG {conn-10005} pool-connect
+2019-10-19 18:19:48,876 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:19:48,976 DEBUG {conn-10001} closed
+2019-10-19 18:19:48,976 DEBUG {conn-10002} closed
+2019-10-19 18:19:48,976 DEBUG {conn-10003} closed
+2019-10-19 18:19:48,976 DEBUG {conn-10004} closed
+2019-10-19 18:19:48,976 DEBUG {conn-10005} closed
+2019-10-19 18:20:35,121 DEBUG {conn-10001} connected
+2019-10-19 18:20:35,124 DEBUG {conn-10002} connected
+2019-10-19 18:20:35,126 DEBUG {conn-10003} connected
+2019-10-19 18:20:35,127 DEBUG {conn-10004} connected
+2019-10-19 18:20:35,129 DEBUG {conn-10005} connected
+2019-10-19 18:20:35,132 DEBUG {conn-10005} pool-connect
+2019-10-19 18:20:35,134 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:20:35,247 DEBUG {conn-10001} closed
+2019-10-19 18:20:35,247 DEBUG {conn-10002} closed
+2019-10-19 18:20:35,247 DEBUG {conn-10003} closed
+2019-10-19 18:20:35,247 DEBUG {conn-10004} closed
+2019-10-19 18:20:35,247 DEBUG {conn-10005} closed
+2019-10-19 18:21:06,048 DEBUG {conn-10001} connected
+2019-10-19 18:21:06,051 DEBUG {conn-10002} connected
+2019-10-19 18:21:06,053 DEBUG {conn-10003} connected
+2019-10-19 18:21:06,054 DEBUG {conn-10004} connected
+2019-10-19 18:21:06,055 DEBUG {conn-10005} connected
+2019-10-19 18:21:06,058 DEBUG {conn-10005} pool-connect
+2019-10-19 18:21:06,060 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:21:06,182 DEBUG {conn-10001} closed
+2019-10-19 18:21:06,182 DEBUG {conn-10002} closed
+2019-10-19 18:21:06,183 DEBUG {conn-10003} closed
+2019-10-19 18:21:06,183 DEBUG {conn-10004} closed
+2019-10-19 18:21:06,183 DEBUG {conn-10005} closed
+2019-10-19 18:23:12,668 DEBUG {conn-10001} connected
+2019-10-19 18:23:12,671 DEBUG {conn-10002} connected
+2019-10-19 18:23:12,673 DEBUG {conn-10003} connected
+2019-10-19 18:23:12,674 DEBUG {conn-10004} connected
+2019-10-19 18:23:12,676 DEBUG {conn-10005} connected
+2019-10-19 18:23:12,678 DEBUG {conn-10005} pool-connect
+2019-10-19 18:23:12,680 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:23:12,800 DEBUG {conn-10001} closed
+2019-10-19 18:23:12,800 DEBUG {conn-10002} closed
+2019-10-19 18:23:12,800 DEBUG {conn-10003} closed
+2019-10-19 18:23:12,800 DEBUG {conn-10004} closed
+2019-10-19 18:23:12,800 DEBUG {conn-10005} closed
+2019-10-19 18:26:44,447 DEBUG {conn-10001} connected
+2019-10-19 18:26:44,450 DEBUG {conn-10002} connected
+2019-10-19 18:26:44,452 DEBUG {conn-10003} connected
+2019-10-19 18:26:44,453 DEBUG {conn-10004} connected
+2019-10-19 18:26:44,455 DEBUG {conn-10005} connected
+2019-10-19 18:26:44,459 DEBUG {conn-10005} pool-connect
+2019-10-19 18:26:44,461 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:26:44,511 DEBUG {conn-10001} closed
+2019-10-19 18:26:44,512 DEBUG {conn-10002} closed
+2019-10-19 18:26:44,512 DEBUG {conn-10003} closed
+2019-10-19 18:26:44,512 DEBUG {conn-10004} closed
+2019-10-19 18:26:44,512 DEBUG {conn-10005} closed
+2019-10-19 18:28:40,090 DEBUG {conn-10001} connected
+2019-10-19 18:28:40,094 DEBUG {conn-10002} connected
+2019-10-19 18:28:40,096 DEBUG {conn-10003} connected
+2019-10-19 18:28:40,098 DEBUG {conn-10004} connected
+2019-10-19 18:28:40,100 DEBUG {conn-10005} connected
+2019-10-19 18:28:40,105 DEBUG {conn-10005} pool-connect
+2019-10-19 18:28:40,107 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:28:40,162 DEBUG {conn-10001} closed
+2019-10-19 18:28:40,163 DEBUG {conn-10002} closed
+2019-10-19 18:28:40,163 DEBUG {conn-10003} closed
+2019-10-19 18:28:40,163 DEBUG {conn-10004} closed
+2019-10-19 18:28:40,163 DEBUG {conn-10005} closed
+2019-10-19 18:32:33,414 DEBUG {conn-10001} connected
+2019-10-19 18:32:33,417 DEBUG {conn-10002} connected
+2019-10-19 18:32:33,418 DEBUG {conn-10003} connected
+2019-10-19 18:32:33,420 DEBUG {conn-10004} connected
+2019-10-19 18:32:33,422 DEBUG {conn-10005} connected
+2019-10-19 18:32:33,426 DEBUG {conn-10005} pool-connect
+2019-10-19 18:32:33,428 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:32:33,478 DEBUG {conn-10001} closed
+2019-10-19 18:32:33,478 DEBUG {conn-10002} closed
+2019-10-19 18:32:33,478 DEBUG {conn-10003} closed
+2019-10-19 18:32:33,478 DEBUG {conn-10004} closed
+2019-10-19 18:32:33,478 DEBUG {conn-10005} closed
+2019-10-19 18:34:55,736 DEBUG {conn-10001} connected
+2019-10-19 18:34:55,739 DEBUG {conn-10002} connected
+2019-10-19 18:34:55,741 DEBUG {conn-10003} connected
+2019-10-19 18:34:55,743 DEBUG {conn-10004} connected
+2019-10-19 18:34:55,744 DEBUG {conn-10005} connected
+2019-10-19 18:34:55,749 DEBUG {conn-10005} pool-connect
+2019-10-19 18:34:55,750 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:34:55,800 DEBUG {conn-10001} closed
+2019-10-19 18:34:55,800 DEBUG {conn-10002} closed
+2019-10-19 18:34:55,800 DEBUG {conn-10003} closed
+2019-10-19 18:34:55,800 DEBUG {conn-10004} closed
+2019-10-19 18:34:55,800 DEBUG {conn-10005} closed
+2019-10-19 18:36:41,678 DEBUG {conn-10001} connected
+2019-10-19 18:36:41,681 DEBUG {conn-10002} connected
+2019-10-19 18:36:41,683 DEBUG {conn-10003} connected
+2019-10-19 18:36:41,685 DEBUG {conn-10004} connected
+2019-10-19 18:36:41,686 DEBUG {conn-10005} connected
+2019-10-19 18:36:41,744 DEBUG {conn-10005} pool-connect
+2019-10-19 18:36:41,745 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:36:41,796 DEBUG {conn-10001} closed
+2019-10-19 18:36:41,796 DEBUG {conn-10002} closed
+2019-10-19 18:36:41,796 DEBUG {conn-10003} closed
+2019-10-19 18:36:41,796 DEBUG {conn-10004} closed
+2019-10-19 18:36:41,796 DEBUG {conn-10005} closed
+2019-10-19 18:43:50,059 DEBUG {conn-10001} connected
+2019-10-19 18:43:50,062 DEBUG {conn-10002} connected
+2019-10-19 18:43:50,063 DEBUG {conn-10003} connected
+2019-10-19 18:43:50,065 DEBUG {conn-10004} connected
+2019-10-19 18:43:50,066 DEBUG {conn-10005} connected
+2019-10-19 18:43:50,071 DEBUG {conn-10005} pool-connect
+2019-10-19 18:43:50,073 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:43:50,122 DEBUG {conn-10001} closed
+2019-10-19 18:43:50,122 DEBUG {conn-10002} closed
+2019-10-19 18:43:50,122 DEBUG {conn-10003} closed
+2019-10-19 18:43:50,122 DEBUG {conn-10004} closed
+2019-10-19 18:43:50,123 DEBUG {conn-10005} closed
+2019-10-19 18:44:09,688 DEBUG {conn-10001} connected
+2019-10-19 18:44:09,691 DEBUG {conn-10002} connected
+2019-10-19 18:44:09,693 DEBUG {conn-10003} connected
+2019-10-19 18:44:09,695 DEBUG {conn-10004} connected
+2019-10-19 18:44:09,696 DEBUG {conn-10005} connected
+2019-10-19 18:44:09,701 DEBUG {conn-10005} pool-connect
+2019-10-19 18:44:09,702 DEBUG {conn-10005} pool-recycle
+2019-10-19 18:44:09,755 DEBUG {conn-10001} closed
+2019-10-19 18:44:09,755 DEBUG {conn-10002} closed
+2019-10-19 18:44:09,755 DEBUG {conn-10003} closed
+2019-10-19 18:44:09,755 DEBUG {conn-10004} closed
+2019-10-19 18:44:09,755 DEBUG {conn-10005} closed

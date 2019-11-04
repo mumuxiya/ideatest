@@ -1,0 +1,166 @@
+<?php $indexc=1;?>{template "header.html"}
+<div class="container Compatible">
+        <div class="row">
+        	<div class="col-lg-wide-75 col-xs-1 padding-0 macplus-top-10 macplus-lefter">	
+			   	<div class="macplus-pannel macplus-pannel-bg clearfix">
+					<div class="macplus-pannel-box">
+						<div class="macplus-pannel_hd">
+							<div class="macplus-pannel__head active bottom-line text-overflow clearfix">	
+								<h3 class="title">关于"<span class="text-red">{$keyword}</span>"搜索结果</h3>
+																	<span class="more text-muted pull-right"></span>
+							</div>																		
+						</div>
+						<div class="macplus-pannel_bd clearfix">
+							<ul class="macplus-vodlist__media sea col-pd clearfix">
+									
+									{list action=sql module=$mid sql='$search_sql' page=1 pagesize=10 urlrule=$urlrule}	
+									<li class="bottom-line active clearfix">
+									<div class="thumb">									
+										<a class="v-thumb macplus-vodlist__thumb lazyload" href="{$t.url}" title="{$t.title}" data-original="{if $t.caijipic}{$t.caijipic}{else}{dr_thumb($t.thumb)}{/if}">
+											<span class="play hidden-xs"></span>
+											<span class="pic-text text-right"></span>
+										</a>																												
+									</div>
+									<div class="detail">
+										<h3 class="title text-overflow"><a href="{$t.url}">{$t.title}</a></h3>
+										<p class="text-overflow"><span class="text-muted">导演：</span>{$t.director}</p>
+										<p class="text-overflow"><span class="text-muted">主演：</span>{$t.zhuyan}</p>
+										<p class="text-overflow"><span class="text-muted">类型：</span>{$t.type}<span class="split-line"></span><span class="text-muted">地区：</span>{$t.area}</p>
+										<p class="text-overflow"><span class="text-muted">年份：</span>{$t.year}<span class="split-line"></span><span class="text-muted">播放：</span>{$t.hits}</span></p>		
+										<p class="btn-button"><a class="btn-play btn-primary" href="{$t.url}">点击播放</a></p>												    	    																									
+									</div>
+								</li>							
+{/list}
+{if SITE_CHANGXIAN==1}
+{loop $cxlist $t}
+<li class="bottom-line active clearfix">
+									<div class="thumb">									
+										<a class="v-thumb macplus-vodlist__thumb lazyload" href="{dr_url('cxplay/index')}&id={$t.vod_id}" title="{$t.vod_name}" data-original="{$t.vod_pic}">
+											<span class="play hidden-xs"></span>
+											<span class="pic-text text-right"></span>
+										</a>																												
+									</div>
+									<div class="detail">
+										<h3 class="title text-overflow"><a href="{dr_url('cxplay/index')}&id={$t.vod_id}">{$t.vod_name}</a></h3>
+										<p class="text-overflow"><span class="text-muted">导演：</span>{$t.vod_director}</p>
+										<p class="text-overflow"><span class="text-muted">主演：</span>{$t.vod_actor}</p>
+										<p class="text-overflow"><span class="text-muted">类型：</span>{$t.vod_class}<span class="split-line"></span><span class="text-muted">地区：</span>{$t.vod_area}</p>
+										<p class="text-overflow"><span class="text-muted">年份：</span>{$t.vod_year}<span class="split-line"></span><span class="text-muted">播放：</span>{$t.vod_hits}</span></p>		
+										<p class="btn-button"><a class="btn-play btn-primary" href="{dr_url('cxplay/index')}&id={$t.vod_id}">点击播放</a></p>												    	    																									
+									</div>
+								</li>
+{/loop}
+{/if}
+{loop $searchlist $t}
+<li class="bottom-line active clearfix">
+									<div class="thumb">									
+										<a class="v-thumb macplus-vodlist__thumb lazyload" href="{dr_url('vodshow/index')}&play={$t.url}" title="{$t.title}" data-original="{$t.img}">
+											<span class="play hidden-xs"></span>
+											<span class="pic-text text-right"></span>
+										</a>																												
+									</div>
+									<div class="detail">
+										<h3 class="title text-overflow"><a href="{dr_url('vodshow/index')}&play={$t.url}">{$t.title}</a></h3>
+										<p class="text-overflow"><span class="text-muted">导演：</span></p>
+										<p class="text-overflow"><span class="text-muted">{$t.actor}</span></p>
+										<p class="text-overflow"><span class="text-muted">类型：</span><span class="split-line"></span><span class="text-muted">地区：</span>{$t.area}</p>
+										<p class="text-overflow"><span class="text-muted">年份：</span>{$t.year}<span class="split-line"></span><span class="text-muted">播放：</span></span></p>		
+										<p class="btn-button"><a class="btn-play btn-primary" href="{dr_url('vodshow/index')}&play={$t.url}">点击播放</a></p>												    	    																									
+									</div>
+								</li>
+{/loop}							
+															</ul>	
+													</div>
+					</div>				
+				</div>	            
+
+<!-- 翻页 -->
+			</div>
+
+	<div class="col-lg-wide-25 macplus-pannel-side visible-lg hide macplus-righter">
+	     <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+         <h3 class="title"><a href="/index.php/vod/show/id/1.html">电影热播榜</a></h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+        <ul class="macplus-vodlist__rank col-pd clearfix">
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/379.html" title="疑魂"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius badge-first">1</span>疑魂</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/937.html" title="耻归故里"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius badge-second">2</span>耻归故里</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/190.html" title="恐惧元素"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius badge-third">3</span>恐惧元素</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/183.html" title="亲切的金子"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">4</span>亲切的金子</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/420.html" title="老腔"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">5</span>老腔</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/508.html" title="日光峡谷"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius">6</span>日光峡谷</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/649.html" title="拂晓突击队"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">7</span>拂晓突击队</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/504.html" title="神啊，请赐我耐心"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">8</span>神啊，请赐我耐心</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/582.html" title="楼上的外星人"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius">9</span>楼上的外星人</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/485.html" title="辣手美人"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius">10</span>辣手美人</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/837.html" title="美国狙击手"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius">11</span>美国狙击手</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/443.html" title="先亲后杀"><span class="text-muted pull-right">BD720P中字</span><span class="badge badge-radius">12</span>先亲后杀</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/346.html" title="孤胆英雄"><span class="text-muted pull-right">HD720P中字</span><span class="badge badge-radius">13</span>孤胆英雄</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/380.html" title="婴灵"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">14</span>婴灵</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/780.html" title="宠物公墓/禁入坟场"><span class="text-muted pull-right">HD1080P中</span><span class="badge badge-radius">15</span>宠物公墓/禁入坟场</a></li> -->
+		        </ul>
+       </div>
+      </div>
+	  </div>
+	       <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplus-pannel-box">
+       <div class="macplus-pannel_hd">
+        <div class="macplus-pannel__head clearfix">
+         <h3 class="title"><a href="/index.php/vod/show/id/2.html">连续剧热播榜</a></h3>
+        </div>
+       </div>
+       <div class="macplus-pannel_bd">
+        <ul class="macplus-vodlist__rank col-pd clearfix">
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/363.html" title="极品老妈第六季"><span class="text-muted pull-right">第20集</span><span class="badge badge-radius badge-first">1</span>极品老妈第六季</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/30.html" title="吸血鬼生活第一季"><span class="text-muted pull-right">第05集</span><span class="badge badge-radius badge-second">2</span>吸血鬼生活第一季</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/693.html" title="守护星辰/密谋换爱"><span class="text-muted pull-right">第07集</span><span class="badge badge-radius badge-third">3</span>守护星辰/密谋换爱</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/462.html" title="报告老板之豪言壮旅"><span class="text-muted pull-right">第07集</span><span class="badge badge-radius">4</span>报告老板之豪言壮旅</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/476.html" title="过界的爱"><span class="text-muted pull-right">第04集</span><span class="badge badge-radius">5</span>过界的爱</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/683.html" title="三重暧昧"><span class="text-muted pull-right">第07集</span><span class="badge badge-radius">6</span>三重暧昧</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/209.html" title="HIStory3圈套"><span class="text-muted pull-right">第08集</span><span class="badge badge-radius">7</span>HIStory3圈套</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/39.html" title="炮仔声"><span class="text-muted pull-right">第87集</span><span class="badge badge-radius">8</span>炮仔声</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/297.html" title="爱之诺"><span class="text-muted pull-right">第28集</span><span class="badge badge-radius">9</span>爱之诺</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/241.html" title="杀人剧场"><span class="text-muted pull-right">第05集</span><span class="badge badge-radius">10</span>杀人剧场</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/862.html" title="人生七年之56岁篇"><span class="text-muted pull-right">第03集</span><span class="badge badge-radius">11</span>人生七年之56岁篇</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/397.html" title="夜空中最闪亮的星"><span class="text-muted pull-right">第42集</span><span class="badge badge-radius">12</span>夜空中最闪亮的星</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/220.html" title="护法为民第二季"><span class="text-muted pull-right">第05集</span><span class="badge badge-radius">13</span>护法为民第二季</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/382.html" title="亿万第四季"><span class="text-muted pull-right">第07集</span><span class="badge badge-radius">14</span>亿万第四季</a></li> -->
+		         <!-- <li><a class="text-overflow" href="/index.php/vod/detail/id/566.html" title="法网群英"><span class="text-muted pull-right">第35集</span><span class="badge badge-radius">15</span>法网群英</a></li> -->
+		        </ul>
+       </div>
+      </div>
+	  </div>
+	      </div>
+	</div>
+	</div>
+
+<!-- 页脚 -->
+<div class="macplus-foot top-line">
+	<div class="container">
+		<div class="row">
+			<div class="footer-center">
+				<p class="text-muted hidden-sm hidden-xs">
+					<a target="_blank" href="/index.php?c=form&mid=liuyan" class="text-red">求片留言中心</a><span class="split-line"></span>
+					<a target="_blank" href="#">今日更新</a><span class="split-line"></span>
+					<a target="_blank" href="#">网站地图</a><span class="split-line"></span>
+					<a target="_blank" href="#">RSS订阅</a><span class="split-line"></span>
+					<a target="_blank" href="#">影视榜单</a></p>
+				<p class="visible-xs visible-sm text-muted">视频总量：999 今日更新：0</p>
+				<p class="hidden-sm hidden-xs text-muted">本站不提供任何视听上传储存服务，所有内容均来至网络自动采集，且已注明相关资源来源</p>
+				<p class="text-muted"><span class="hidden-sm hidden-xs text-muted">若本站收录的节目无意侵犯了贵司权利，请来信告知123456@maccms.com，我们会及时处理和删除，谢谢！</span></p>
+				<p class="text-muted">Copyright &copy; 2008-2019 免费电影 All Rights Reserved.</p>
+			</div>
+		</div>
+		<div class="macplus-extra clearfix">
+			<li><a class="backtop" href="javascript:scroll(0,0)" style="display: none;"><i class="icon iconfont icon-less"></i></a></li>
+			<li><a class="copylink" href="javascript:;"><i class="icon iconfont icon-share"></i></a></li>
+			<li><a href="/index.php?c=form&mid=liuyan"><i class="icon iconfont icon-comments"></i></a></li>
+		</div>
+		<div class="hide">统计代码</div>
+	</div>
+	</body>
+	</html>

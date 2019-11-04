@@ -1,0 +1,87 @@
+{template "header.html"}
+<div class="typeWarp">
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel macplus-pannel-bg clearfix macplus-top-10">
+     <div class="macplus-pannel-box macplus-pannel_dd">
+      <div class="macplus-pannel_hd">
+
+
+  
+	   <div id="classifyList02" class="classifyList bottom-line-dot">
+	   <ul class="macplus-screen__list type swiper-wrapper clearfix">
+        <li class="swiper-slide"><span class="text-muted">按类型</span></li>
+{loop $category $c}
+<li class="swiper-slide"><a  href="{dr_url('cx/index')}&type={$c.type_id}&page={$page}" target="_self">{$c.type_name}</a></li>
+{/loop}
+                       </ul>
+	   </div>
+
+         </div>
+	   </div>
+	  </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel macplus-pannel-bg clearfix">
+      <div class="macplusd-list-head">
+	    <ul class="macplusd-list-hd">
+		<li class="item current">
+					<a href="#">按最新</a></li>
+
+
+		<span class="more text-muted pull-right">如果您喜欢本站请动动小手分享给您的朋友！</span>
+		</ul>
+		</div>
+       <div class="macplus-vodlist clearfix">
+	    {loop $shipinlist $c}
+         <li class="col-md-7 col-sm-4 col-xs-3">
+                    <div class="macplus-vodlist__bag">
+           <a class="macplus-vodlist__thumb lazyload" href="{dr_url('cxplay/index')}&id={$c.vod_id}" title="{$c.vod_name}" data-original="{$c.vod_pic}">
+		   <span class="pic-text text-right">{$c.vod_year}</span></a>
+           <div class="macplus-vodlist__detail active">
+            <h4 class="title text-overflow"><a href="{dr_url('cxplay/index')}&id={$c.vod_id}" title="{$c.vod_name}">{$c.vod_name}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs">{$t.desc}</p>
+           </div>
+          </div>
+		  </li>
+		  {/loop}	
+		  
+		         </div>
+<div class="macplus-page text-center clearfix">
+    <ul class="macplus-page_info">
+<?php
+if($_GET['page'] > 1){
+     echo '<li ><a href="index.php?c=cx&type='.$type.'&page=1">首页</a></li>';
+     echo '<li ><a href="index.php?c=cx&type='.$type.'&page=' . ($_GET['page']-1) . '">上一页</a></li>';
+	 echo '<li><a>' . $_GET['page'] . '/'.$yeshu.'</a></li>';
+     } else {
+echo '<li ><a href="index.php?c=cx&type='.$type.'&page=1">首页</a></li>';
+echo '<li ><a href="index.php?c=cx&type='.$type.'&page=1">上一页</a></li>';
+ echo '<li><a>1/'.$yeshu.'</a></li>';
+}
+if(!isset($_GET['page'])) {
+echo '<li><a href="index.php?c=cx&type='.$type.'&page=2">下一页</a></li>';
+echo '<li><a href="index.php?c=cx&type='.$type.'&page='.$yeshu.'">尾页</a></li>';
+}
+elseif($_GET['page'] < $yeshu){
+     echo '<li ><a href="index.php?c=cx&type='.$type.'&page=' . ($_GET['page']+1) . '">下一页</a></li>';
+     echo '<li ><a href="index.php?c=cx&type='.$type.'&page='.$yeshu.'">尾页</a></li>';
+     } 
+else {
+echo '<li ><a>下一页</a></li>';
+echo '<li ><a>尾页</a></li>';
+}	 
+echo '<li ><a>共'.$yeshu.'页</a></li>';
+?>
+
+    </ul>
+</div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+{template "footer.html"}

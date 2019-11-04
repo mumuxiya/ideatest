@@ -1,0 +1,13 @@
+<div class="lunhuan" id="carousel1">
+    <div id="lunhuanback">
+      {loop $slidelist $t}
+	<a style="background-image:url({dr_thumb($t.logo)});opacity: 1;display: block;background-color:rgb();" href="{$t.url}" title="{$t.name}"></a>
+     {/loop}
+  </div>
+	<div class="slider_nav" id='lunbonum'>
+        {loop $slidelist $t}
+		<a href="{$t.url}"  ><div class="tit">{$t.name}</div><div class="txt"></div></a>	
+        {/loop}
+</div>
+		<div class="slider_mask"></div>
+</div></div>

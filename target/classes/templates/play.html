@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/b9e0cd7d8518f5d2e0c98493e3f238a.jpg" type="image/x-icon">
+    <title>MUMUXIYA影院_木木夕雅影院-梦雅影院|木木夕雅电影网|无水印电影</title>
+    <meta name="description" content="MUMUXIYA影院_木木夕雅影院_梦雅影院_木木夕雅电影网_梦雅电影下载|梦雅无水印高清电影在线观看（api.mumuxiya.com）是中国最大的免费无水印电影在线观看站，网站自2009年10月在美国创建以来，为广大电影爱好者提供了最新最专业的电影分享、愉悦的在线用户体验，力求让电影本身不再受水印的困扰，努力成为中国人气最旺的免费无水印电影下载站！">
+    <meta name="keywords" th:content="${dy.name}+'在线观看_'+${dy.name}+'无水印观看_'+${dy.name}+'_木木夕雅影院_MUMUXIYA影院_梦雅影院_梦雅电影网_梦雅电影网_MUMUXIYA电影网_MUMUXIYA最新电影_梦雅电影_木木夕雅电影_木木夕雅_mumuxiya_梦雅_MUMUXIYA电影'" content="">
+    <title>MUMUXIYA影院-木木夕雅影院</title>
+    <style>
+        @media (max-width: 575.98px) {
+            .h2{
+                font-size: 1rem;
+            }
+            .ycy{
+                display: none;
+            }
+            .fixed-top2{
+                opacity:0.4;
+                position: inherit !important;
+            }
+        }
+    </style>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</head>
+<body style="background: rgb(52,58,64)">
+<div class="shadow bg-white rounded float">
+    <nav class="navbar fixed-top2 navbar-dark bg-dark">
+        <div class="navbar-brand">
+            <a  th:href="@{/}">
+                <img src="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/b9e0cd7d8518f5d2e0c98493e3f238a.jpg" width="30" height="30" alt="">
+                <a class="ycy">MUMUXIYA影院</a>
+            </a>
+        </div>
+        <div class="ycy">
+            <div class="nav-scroller py-1 mb-2 col-md-12">
+                <nav class="nav d-flex justify-content-between">
+                    <a class="p-2 text-muted" href="http://wall.mumuxiya.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MUMUXIYA壁纸</font></font></a>
+                    <a class="p-2 text-muted" href="http://music.mumuxiya.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MUMUXIYA音乐</font></font></a>
+                </nav>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline" th:action="@{/dySearch}" method="post">
+                <div class="input-group ">
+                    <input type="text" class="form-control" name="value" placeholder="请输入影片名称" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid">
+    <div>
+        <div class="row text-center mt-2">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"  th:src="'http://beaacc.com/api.php?url='+${dy.onePlay}" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 col-12">
+                <div class="md-2">
+                    <h2 class="text-primary h2">线路</h2>
+                    <button type="button" class="btn btn-outline-secondary jxurl" th:each="u:${urls}" th:data-href="${u.url}" th:text="${u.name}">解析</button>
+    <!--                <button type="button" class="btn btn-outline-secondary">Secondary</button>-->
+    <!--                <button type="button" class="btn btn-outline-success">Success</button>-->
+    <!--                <button type="button" class="btn btn-outline-danger">Danger</button>-->
+    <!--                <button type="button" class="btn btn-outline-warning">Warning</button>-->
+    <!--                <button type="button" class="btn btn-outline-info">Info</button>-->
+    <!--                <button type="button" class="btn btn-outline-light">Light</button>-->
+    <!--                <button type="button" class="btn btn-outline-dark">Dark</button>-->
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="md-2">
+                    <h2 class="text-primary h2">播放列表</h2>
+                    <button th:each="h:${dy.hrefs}" th:data-href="${h.url}" type="button" class="playurl btn btn-outline-secondary " th:text="${h.name}"></button>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-auto py-3 mt-5 mb-5 text-center">
+    <div class="container">
+        <span class="text-muted"><a th:href="@{/}">MUMUXIYA影院-木木夕雅影院</a>这个项目仅用于个人学习、测试。本站不存储任何视频，所有接口均来自互联网。</span>
+        <span class="text-muted">站长邮箱：1360602971@qq.com</span>
+        <!-- Button trigger modal -->
+        <span type="button" class="text-muted" data-toggle="modal" data-target="#exampleModalScrollable">
+                公众号：木木夕雅
+            </span>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/qrcode_for_gh_0276e8c88bf5_430.jpg" class="rounded img-thumbnail d-block" alt="...">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    var _jxurl = "";
+    var _playurl = "";
+    window.onload = function(){
+        $(".playurl:first").addClass("text-danger");//添加样式
+        $(".jxurl:first").addClass("text-danger");//添加样式
+
+        _playurl = $(".playurl").eq(0).attr("data-href");
+        _jxurl = $(".jxurl").eq(0).attr("data-href");
+
+        $(".playurl").click(function(e) {
+            _playurl = e.currentTarget.dataset.href
+            $(".playurl").removeClass("text-danger");
+            $(this).addClass("text-danger");
+            $(".embed-responsive-item").attr("src",_jxurl+_playurl);
+        });
+        $(".jxurl").click(function(e) {
+            _jxurl = e.currentTarget.dataset.href
+            $(".jxurl").removeClass("text-danger");
+            $(this).addClass("text-danger");
+            $(".embed-responsive-item").attr("src",_jxurl+_playurl);
+        });
+        $(".embed-responsive-item").attr("src",_jxurl+_playurl);
+    }
+</script>
+</body>
+</html>

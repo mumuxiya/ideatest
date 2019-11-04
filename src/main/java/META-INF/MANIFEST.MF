@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Main-Class: com.lg.jabcmysqldemo.JabcmysqldemoApplication
+Class-Path: aliyun-java-sdk-ecs-4.2.0.jar thymeleaf-extras-java8time-3.0
+ .4.RELEASE.jar httpcore-4.4.12.jar jul-to-slf4j-1.7.28.jar validation-a
+ pi-2.0.1.Final.jar jackson-databind-2.9.9.3.jar aliyun-java-sdk-ram-3.0
+ .0.jar mybatis-plus-3.1.1.jar spring-jdbc-5.1.9.RELEASE.jar jackson-mod
+ ule-parameter-names-2.9.9.jar snakeyaml-1.23.jar commons-codec-1.11.jar
+  tomcat-embed-core-9.0.24.jar tomcat-embed-el-9.0.24.jar mybatis-plus-a
+ nnotation-3.1.1.jar jsoup-1.11.3.jar spring-boot-autoconfigure-2.1.8.RE
+ LEASE.jar spring-tx-5.1.9.RELEASE.jar spring-boot-2.1.8.RELEASE.jar ali
+ yun-java-sdk-core-3.4.0.jar spring-aop-5.1.9.RELEASE.jar spring-boot-st
+ arter-jdbc-2.1.8.RELEASE.jar jettison-1.1.jar log4j-api-2.11.2.jar jack
+ son-annotations-2.9.0.jar mybatis-plus-core-3.1.1.jar jboss-logging-3.3
+ .3.Final.jar spring-webmvc-5.1.9.RELEASE.jar mybatis-spring-2.0.1.jar s
+ tax-api-1.0.1.jar thymeleaf-3.0.11.RELEASE.jar HikariCP-3.2.0.jar sprin
+ g-core-5.1.9.RELEASE.jar javax.annotation-api-1.3.2.jar spring-boot-sta
+ rter-tomcat-2.1.8.RELEASE.jar aliyun-sdk-oss-3.5.0.jar jackson-datatype
+ -jdk8-2.9.9.jar spring-expression-5.1.9.RELEASE.jar mybatis-3.5.1.jar j
+ dom-1.1.jar aliyun-java-sdk-sts-3.0.0.jar slf4j-api-1.7.28.jar jsqlpars
+ er-1.2.jar attoparser-2.0.5.RELEASE.jar spring-boot-starter-logging-2.1
+ .8.RELEASE.jar classmate-1.4.0.jar spring-jcl-5.1.9.RELEASE.jar spring-
+ web-5.1.9.RELEASE.jar spring-boot-starter-thymeleaf-2.1.8.RELEASE.jar h
+ ibernate-validator-6.0.17.Final.jar unbescape-1.1.6.RELEASE.jar mybatis
+ -plus-extension-3.1.1.jar druid-1.1.11.jar logback-core-1.2.3.jar log4j
+ -to-slf4j-2.11.2.jar spring-beans-5.1.9.RELEASE.jar spring-boot-starter
+ -web-2.1.8.RELEASE.jar spring-context-5.1.9.RELEASE.jar jackson-core-2.
+ 9.9.jar mybatis-plus-boot-starter-3.1.1.jar logback-classic-1.2.3.jar t
+ omcat-embed-websocket-9.0.24.jar log4j-1.2.17.jar thymeleaf-spring5-3.0
+ .11.RELEASE.jar jackson-datatype-jsr310-2.9.9.jar spring-boot-starter-j
+ son-2.1.8.RELEASE.jar httpclient-4.5.9.jar spring-boot-starter-2.1.8.RE
+ LEASE.jar mysql-connector-java-8.0.17.jar
+

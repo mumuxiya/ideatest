@@ -1,0 +1,93 @@
+<?php $indexc=1;?>{template "header.html", "/"}
+<script type="text/javascript">var memberpath = "/";</script>
+<link rel="stylesheet" href="/statics/js/ui-dialog.css">
+<script type="text/javascript"t src="/statics/js/dialog-plus.js"></script>
+<script type="text/javascript" src="/statics/js/puhua.js"></script>
+<script type="text/javascript">
+    $(function() {
+        {if $result}
+        dr_tips('{$result.msg}');
+        {/if}
+    });
+</script>
+<div class="loginWarp">
+  <div class="container">
+   <div class="row">
+   <div class="macplus-pannel macplus-pannel-bg clearfix login-main">
+   <div class="login-main-left">
+              <div class="text-center login-main-header">
+                <img src="{dr_get_file(SITE_LOGO)}" class="login-main-img" alt="LOGO">
+                <h2>欢迎登录</h2>
+                <p>海量高清视频免费在线观看</p>
+              </div>
+              <form class="login-form" action="" id="myform" method="post">
+				<input type="hidden" name="back" value="{$back_url}">
+                <div class="form-group">
+                  <label>账号</label>
+                  <input type="text" name="data[username]" class="form-control" placeholder="请输入您的登录账号" required autofocus>
+                </div>
+				<div class="form-group">
+                  <label>邮箱</label>
+                  <input type="text" name="data[email]" class="form-control" placeholder="请输入您的邮箱" required autofocus>
+                </div>
+                <div class="form-group">
+                  <label>密码</label>
+                  <input type="password" name="data[password]" class="form-control" placeholder="请输入您的登录密码" required>
+                </div>
+                <div class="form-group">
+                  <label>确认密码</label>
+                  <input type="password" name="data[password2]" class="form-control" placeholder="请输入您的确认密码" required>
+				  </div>
+				  {if $code}
+				   <div class="form-group">
+				  <label>验证码</label>
+				  <input type="text" class="form-control" name="验证码" placeholder="请输入验证码">
+				  <img class="form-mt3" onclick="this.src='{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}&'+Math.random();" src="{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}" />
+				</div>{/if}
+
+
+								 <div class="form-mt4 clearfix">
+                      <input type="button" onclick="dr_submit()" class="btn btn-primary col-xs-1" value="立即注册">
+                </div>
+              </form>
+              <div class="text-center form-mt5">
+                <p class="light-gray">已经有账户?<a href="{dr_member_url('login/index')}">登录</a></p>
+              </div>
+            </div>
+          </div>
+	     </div>
+      </div>
+   </div>
+</div>
+
+<script type="text/javascript">
+    function dr_submit() {
+        var post = $("#myform").serialize();
+        $.ajax({type: "POST",dataType:"json", url: "{dr_now_url()}", data: post,
+            success: function(data) {
+                if (data.status) {
+                    dr_tips('注册成功，即将为您跳转....', 3, 1);
+                    setTimeout('window.location.href="'+data.backurl+'"', 2000);
+                    var sync_url = data.syncurl;
+                    // 发送同步登录信息
+                    for(var i in sync_url){
+                        $.ajax({
+                            type: "GET",
+                            async: false,
+                            url:sync_url[i],
+                            dataType: "jsonp",
+                            success: function(json){ },
+                            error: function(){ }
+                        });
+                    }
+                } else {
+                    dr_tips(data.code);
+                }
+            },
+            error: function(HttpRequest, ajaxOptions, thrownError) {
+                alert(HttpRequest.responseText);
+            }
+        });
+    }
+</script>
+{template "footer.html", "/"}

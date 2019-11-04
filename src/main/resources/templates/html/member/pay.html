@@ -1,0 +1,76 @@
+{template "mheader.html"}
+<div class="userWarp">
+  <div class="container">
+   <div class="row">
+    <div class="macplus-pannel-bg"> 
+     <div class="macplus-user-pics"> 
+      <div class="macplus-user-core text-center"> 
+       <div class="macplus-user-image" data-role=""> 
+        <img class="face macplus-user-radius" src="/statics/youku/img/avatar.jpg?v=1564816680" /> 
+       </div> 
+       <span class="text-white macplus-user-padding font-16">{$member.username}</span> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="macplus-user-rows macplus-user-diss"> 
+{template "left.html"}
+     <div class="col-lg-wide-75 col-xs-1 macplus-user-t2"> 
+      <div class="macplus-user-layout macplus-pannel-bg"> 
+       <div class="macplus-user-rows"><h2>会员升级<a class="hidden-lg pull-right font-16"  href="#">返回</a></h2></div> 
+       <ul class="macplus-user-rows macplus-pannel-bg"> 
+<form action="" method="post" class="form-horizontal" novalidate>
+					<input name="day" type="hidden" class="form-control" value="{$day}">
+					<input type="hidden" name="money" value="{$money}" >
+
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<ul class="password">
+											 
+												
+				<table width="100%" bolder=5>
+
+					<tbody id="dr_body">
+					<tr>
+							<td width=80>名称:</td><td >{$name}</td>
+						</tr>
+					<tr>
+							<td width=80>金额:</td><td >{$money}元</td>
+						</tr>
+						<tr>
+							<td width=80>天数:</td><td >{$day}天</td>
+						</tr>
+						
+				
+				
+										
+
+                           
+					</tbody>
+				</table>	
+	<div class="radio-list">
+                            {loop $list $name $t}
+          
+                            <label>
+                                <input class="dr_pay_select" name="pay" type="radio" {if $name==alipay} checked="checked"{/if} value="{$name}" />
+                                    <img alt="{$t.name}" title="{$t.name}" src="{SITE_URL}api/pay/{$name}/logo.png" width="100" height="35" />
+                                </label>
+                                
+                            {/loop}
+                        </div>		
+</ul>
+						</div>
+					<div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-3">
+                        <button type="submit" class="btn btn-block btn-warning"><i class="fa fa-rmb"></i> 充值付款</button>
+                    </div>
+                </div>
+            </div>	
+			</form>
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+</div> 
+{template "mfooter.html"}

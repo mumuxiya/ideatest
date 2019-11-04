@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MUMUXIYA影院_木木夕雅影院-梦雅影院|木木夕雅电影网|无水印电影</title>
+    <meta name="description" content="MUMUXIYA影院_木木夕雅影院_梦雅影院_木木夕雅电影网_梦雅电影下载|梦雅无水印高清电影在线观看（api.mumuxiya.com）在线免费电影观看！">
+    <meta name="keywords" content="木木夕雅影院_MUMUXIYA影院_梦雅影院_梦雅电影网_梦雅电影网_MUMUXIYA电影网_MUMUXIYA最新电影_梦雅电影_木木夕雅电影_木木夕雅_mumuxiya_梦雅_MUMUXIYA电影_无水印电影_梦雅在线观看_mumuxiya在线观看_木木夕雅在线观看">
+    <link rel="shortcut icon" href="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/b9e0cd7d8518f5d2e0c98493e3f238a.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="canonical" href="https://v4ing.bootcss.com/docs/4.3/examples/offcanvas/">
+    <link href="https://v4.bootcss.com/docs/4.3/examples/offcanvas/offcanvas.css" rel="stylesheet">
+    <style>
+
+        @media (max-width: 575.98px) {
+            .title{
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="pt-0">
+<div class="shadow bg-white rounded float">
+    <nav class="navbar navbar-light bg-light">
+        <div >
+            <a class="navbar-brand" th:href="@{/}">MUMUXIYA影院</a>
+        </div>
+        <div >
+            <form class="form-inline" th:action="@{/dySearch}" method="post">
+                <div class="input-group ">
+                    <input type="text" class="form-control" name="value" placeholder="请输入影片名称" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid pl-1 pr-1" >
+    <div class="container">
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电影</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电视剧</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">综艺</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文化</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">商业</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">政治</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">意见</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">科学</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">健康</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">风格</font></font></a>
+                <a class="p-2 text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">旅行</font></font></a>
+            </nav>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-12" th:each="d:${dys}">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">高清</strong>
+                        <h3 class="mb-0 title" th:text="${d.name}"></h3>
+                        <div class="mb-1 text-muted" >动作</div>
+                        <p class="card-text mb-auto d-none d-lg-block" th:text="${d.introduce}"></p>
+                        <a th:href="@{/play}+${d.url}" class="stretched-link">在线观看</a>
+                    </div>
+                    <div class="col-auto">
+<!--                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+                        <img th:src="${d.imgUrl}" alt="" class="rounded img-height" width="195px" >
+                    </div>
+                </div>
+            </div>
+<!--            <div class="col-md-12">-->
+<!--                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">-->
+<!--                    <div class="col p-4 d-flex flex-column position-static">-->
+<!--                        <strong class="d-inline-block mb-2 text-success">Design</strong>-->
+<!--                        <h3 class="mb-0">Post title</h3>-->
+<!--                        <div class="mb-1 text-muted">Nov 11</div>-->
+<!--                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>-->
+<!--                        <a href="#" class="stretched-link">Continue reading</a>-->
+<!--                    </div>-->
+<!--                    <div class="col-auto d-none d-lg-block">-->
+<!--                        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 mt-5 mb-5 text-center">
+    <div class="container">
+        <span class="text-muted"><a th:href="@{/}">MUMUXIYA影院-木木夕雅影院</a>本网站供学习使用，请勿瞎搞！</span>
+        <span class="text-muted">站长邮箱：1360602971@qq.com</span>
+        <!-- Button trigger modal -->
+        <span type="button" class="text-muted" data-toggle="modal" data-target="#exampleModalScrollable">
+                公众号：木木夕雅
+            </span>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://mumuxiya.oss-cn-beijing.aliyuncs.com/icons/qrcode_for_gh_0276e8c88bf5_430.jpg" class="rounded img-thumbnail d-block" alt="...">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <!--                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

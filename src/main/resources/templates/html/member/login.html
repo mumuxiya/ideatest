@@ -1,0 +1,81 @@
+<?php $indexc=1;?>{template "header.html", "/"}
+<script type="text/javascript">var memberpath = "/";</script>
+<link rel="stylesheet" href="/statics/js/ui-dialog.css">
+
+<script type="text/javascript"t src="/statics/js/dialog-plus.js"></script>
+<script type="text/javascript" src="/statics/js/puhua.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        {if $result}
+        dr_tips('{$result.msg}');
+        {/if}
+    });
+</script>
+<div class="loginWarp">
+  <div class="container">
+   <div class="row">
+   <div class="macplus-pannel macplus-pannel-bg clearfix login-main">
+   <div class="login-main-left">
+              <div class="text-center login-main-header">
+                <img src="{dr_get_file(SITE_LOGO)}" class="login-main-img" alt="LOGO">
+                <h2>欢迎登录</h2>
+                <p>海量高清视频免费在线观看</p>
+              </div>
+              <form class="login-form" id="myform" action="" method="post">
+				<input type="hidden" name="back" value="{$back_url}">
+                <div class="form-group">
+                  <label>账号</label>
+                  <input type="text" name="data[username]" class="form-control" placeholder="请输入您的登录账号" value="" autofocus="" required="">
+                </div>
+                <div class="form-group">
+                  <label>密码</label>
+                  <input type="password" name="data[password]" class="form-control" placeholder="请输入您的登录密码" required="">
+                </div>
+				<div class="form-group"><input type="checkbox" name="data[auto]" value="1" checked="checked" />免登录 </label></div>
+								 <div class="form-mt4 clearfix">
+                      <input type="button" onclick="dr_submit()" class="btn btn-primary col-xs-1" value="立即登录">
+                </div>
+              </form>
+			  <div class="form-mt2"><a href="{dr_member_url('login/find')}">忘记密码?</a></div>
+              <div class="text-center form-mt5"><p class="light-gray">还不是会员?<a href="{dr_member_url('register/index')}">立即注册</a></p></div>
+            </div>
+          </div>
+	     </div>
+      </div>
+   </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function dr_submit() {
+        var post = $("#myform").serialize();
+        $.ajax({type: "POST",dataType:"json", url: "{dr_member_url('login/index')}", data: post,
+            success: function(data) {
+                if (data.status) {
+                    dr_tips('登录成功，即将为您跳转....', 3, 1);
+                    setTimeout('window.location.href="'+data.backurl+'"', 2000);
+                    var sync_url = data.syncurl;
+                    // 发送同步登录信息
+                    for(var i in sync_url){
+                        $.ajax({
+                            type: "GET",
+                            async: false,
+                            url:sync_url[i],
+                            dataType: "jsonp",
+                            success: function(json){ },
+                            error: function(){ }
+                        });
+                    }
+                } else {
+                    dr_tips(data.code);
+                }
+            },
+            error: function(HttpRequest, ajaxOptions, thrownError) {
+                alert(HttpRequest.responseText);
+            }
+        });
+    }
+</script>
+{template "footer.html", "/"}

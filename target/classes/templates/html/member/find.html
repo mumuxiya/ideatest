@@ -1,0 +1,76 @@
+<?php $indexc=1;?>{template "header.html", "/"}
+<div class="loginWarp">
+  <div class="container">
+   <div class="row">
+   <div class="macplus-pannel macplus-pannel-bg clearfix login-main">
+   <div class="login-main-left">
+              <div class="text-center login-main-header">
+                <img src="{dr_get_file(SITE_LOGO)}" class="login-main-img" alt="LOGO">
+                <h2>欢迎登录</h2>
+                <p>海量高清视频免费在线观看</p>
+              </div>
+              <form class="login-form" action="" method="post">
+				<input name="uid" type="hidden" value="{$uid}" />
+				<input name="step" type="hidden" value="{$step}" />
+				{if $step == 1}
+				{if $error}
+								<div class="alert alert-danger">
+									<button class="close" data-close="alert"></button>
+									<span>{$error}</span>
+								</div>
+								{/if}
+                <div class="form-group">
+                  <label>注册邮箱</label>
+                  <input type="text" id="user_name" name="user_name" class="form-control" placeholder="输入注册邮箱">
+                </div>
+                
+				<div class="form-group">
+				  <label>验证码</label>
+				  <input type="text" class="form-control" name="验证码" placeholder="请输入验证码" name="code">
+				  <img class="form-mt3" onclick="this.src='{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}&'+Math.random();" src="{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}" />
+				</div>
+				 <div class="form-mt4 clearfix">
+                      <input type="submit" class="btn btn-primary col-xs-1" value="下一步">
+                </div>
+				{else if $step == 2}
+				{if $error}
+								<div class="alert alert-danger">
+									<button class="close" data-close="alert"></button>
+									<span>{$error}</span>
+								</div>
+								{/if}
+								<div class="form-group">
+                  <label>验证凭证</label>
+                  <input type="text" id="user_name" name="code" class="form-control" placeholder="输入验证凭证">
+                </div>
+				<div class="form-group">
+                  <label>重置密码</label>
+                  <input type="password" name="password" class="form-control" placeholder="输入验证凭证">
+                </div>
+				<div class="form-group">
+                  <label>确认密码</label>
+                  <input type="password" name="password2" class="form-control" placeholder="输入验证凭证">
+                </div>
+                
+				<div class="form-group">
+				  <label>验证码</label>
+				  <input type="text" class="form-control" name="验证码" placeholder="请输入验证码">
+				  <img class="form-mt3" onclick="this.src='{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}&'+Math.random();" src="{dr_member_url('api/captcha', array('width' => 120, 'height' => 40))}" />
+				</div>
+				 <div class="form-mt4 clearfix">
+                      <input type="submit" class="btn btn-primary col-xs-1" value="重置密码">
+                </div>
+				{/if}
+              </form>
+              <div class="text-center form-mt5">
+                <p class="light-gray">想起密码了? <a href="{dr_member_url('login/index')}">直接登录</a></p>
+              </div>
+            </div>
+          </div>
+	     </div>
+      </div>
+   </div>
+</div>
+
+
+{template "footer.html", "/"}
